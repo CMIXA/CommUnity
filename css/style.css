@@ -1,3 +1,8 @@
+.location .location-title h1, .contact .contact-title h1, .about .about-title h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
 * {
   background-color: rgb(18, 19, 22);
   box-sizing: border-box;
@@ -7,6 +12,9 @@
   padding: 0;
 }
 
+.about {
+  height: 100vh;
+}
 .community {
   display: flex;
   height: 100vh;
@@ -16,10 +24,16 @@
   padding-bottom: 20px;
 }
 
+.contact {
+  height: 100vh;
+}
 .container {
   margin: 0 10%;
 }
 
+.location {
+  height: 100vh;
+}
 nav {
   align-items: center;
   display: flex;
@@ -32,6 +46,9 @@ nav .nav-links {
 nav a {
   padding: 0 15px;
   text-decoration: none;
+}
+nav a:hover {
+  opacity: 60%;
 }
 
 /*# sourceMappingURL=style.css.map */

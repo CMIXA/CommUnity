@@ -1,3 +1,8 @@
+%section-title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
 
 * {
     background-color: rgb(18, 19, 22);
@@ -7,6 +12,14 @@
     sans-serif;
     margin: 0;
     padding: 0;
+}
+
+.about {
+    height: 100vh;
+
+    .about-title h1 {
+        @extend %section-title;
+    }
 }
 
 .community {
@@ -19,8 +32,24 @@
     }
 }
 
+.contact {
+    height: 100vh;
+
+    .contact-title h1 {
+        @extend %section-title;
+    }
+}
+
 .container {
     margin: 0 10%;
+}
+
+.location {
+    height: 100vh;
+
+    .location-title h1{
+        @extend %section-title;
+    }
 }
 
 
@@ -37,5 +66,9 @@ nav {
     a {
         padding: 0 15px;
         text-decoration: none;
+    }
+
+    a:hover {
+        opacity: 60%;
     }
 }

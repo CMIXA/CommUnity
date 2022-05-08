@@ -8,3 +8,29 @@
     margin: 0;
     padding: 0;
 }
+
+.container {
+    margin: 0 10%;
+}
+
+.intro {
+    
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    padding: 50px 0;
+    width: 100%;
+
+    .nav-links {
+        // display: block;
+        // text-align: right;
+        margin-left: auto;
+    }
+
+    a {
+        padding: 0 15px;
+        text-decoration: none;
+    }
+}

@@ -7,4 +7,22 @@
   padding: 0;
 }
 
+.container {
+  margin: 0 10%;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  padding: 50px 0;
+  width: 100%;
+}
+nav .nav-links {
+  margin-left: auto;
+}
+nav a {
+  padding: 0 15px;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

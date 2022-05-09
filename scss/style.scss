@@ -14,6 +14,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .about {
     height: 100vh;
 
@@ -41,7 +45,7 @@
 }
 
 .container {
-    margin: 0 10%;
+    margin: 0 13%;
 }
 
 .location {

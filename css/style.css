@@ -57,5 +57,9 @@ nav a {
 nav a:hover {
   opacity: 60%;
 }
+nav img {
+  width: 27px;
+  margin-right: 5px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -50,6 +50,9 @@ nav {
 nav .nav-links {
   margin-left: auto;
 }
+nav .nav-title {
+  font-weight: 600;
+}
 nav a {
   padding: 0 15px;
   text-decoration: none;
@@ -59,7 +62,13 @@ nav a:hover {
 }
 nav img {
   width: 27px;
-  margin-right: 5px;
+  margin-right: 6px;
+}
+
+.sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

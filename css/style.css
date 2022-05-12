@@ -21,11 +21,20 @@ html {
   padding: 80px 0;
 }
 .community {
-  display: flex;
-  height: 100vh;
-  padding: 120px 0;
+  margin: 120px 0;
+  display: inline-block;
+  width: 100%;
 }
-.community .community-text-title {
+.community .community-icon img {
+  float: right;
+  opacity: 50%;
+  width: 215px;
+}
+.community .community-text {
+  width: 500px;
+  float: left;
+}
+.community .community-text .community-text-title {
   padding-bottom: 20px;
 }
 
@@ -65,9 +74,14 @@ nav img {
   margin-right: 6px;
 }
 
+.sponsors-container {
+  opacity: 50%;
+  margin: 50px 0;
+}
 .sponsors-container .sponsor-title {
   text-align: center;
   padding: 30px 0;
+  font-size: 30px;
 }
 .sponsors-container .sponsors {
   display: flex;
@@ -78,10 +92,14 @@ nav img {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 100px;
+  padding: 0 15%;
+}
+.sponsors-container .sponsors .sponsor-item h3 {
+  font-size: 25px;
 }
 .sponsors-container .sponsors .sponsor-item img {
-  width: 60px;
+  padding: 5px;
+  width: 80px;
 }
 
 /*# sourceMappingURL=style.css.map */

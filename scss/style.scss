@@ -1,5 +1,5 @@
 %section-title {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
 }
 
@@ -25,71 +25,67 @@ html {
     scroll-behavior: smooth;
 }
 
-.about {
-    height: 100vh;
-    padding: 80px 0;
+.container-about {
+    .about {
+        height: 100vh;
+        padding: 200px 0;
 
-    .about-title h1 {
-        @extend %section-title;
-    }
-}
-
-.community {
-    // display: flex;
-    // height: 100vh;
-    margin: 120px 0;
-    // margin-bottom: 300px;
-    display:  inline-block;
-    width: 100%;
-
-    .community-icon {
-
-        // display: inline-block;
-        // float: right;
-        // direction: rtl;
-
-        img {
-            float: right;
-            opacity: 50%;
-            width: 215px;
+        .about-title h1 {
+            @extend %section-title;
         }
     }
-
-    .community-text {
-
-        // padding-right: 100px;
-        width: 500px;
-        // display: inline-block;
-        float: left;
-        
-        .community-text-title {
-            padding-bottom: 20px;
-        }
-    }
-
 }
 
-.contact {
-    height: 100vh;
-    padding: 80px 0;
 
-    .contact-title h1 {
-        @extend %section-title;
-    }
-}
-
-.container {
+.container-community {
     margin: 0 13%;
-}
 
-.location {
-    height: 100vh;
-    padding: 80px 0;
+    .community {
+        margin: 170px 0;
+        display:  inline-block;
+        width: 100%;
 
-    .location-title h1{
-        @extend %section-title;
+        .community-icon {
+
+            img {
+                float: right;
+                opacity: 50%;
+                width: 215px;
+            }
+        }
+        .community-text {
+            width: 500px;
+            float: left;
+            
+            .community-text-title {
+                padding-bottom: 20px;
+            }
+        }
     }
 }
+
+.container-contact{
+    .contact {
+        height: 100vh;
+        padding: 80px 0;
+
+        .contact-title h1 {
+            @extend %section-title;
+        }
+    }
+}
+
+.container-location {
+    .location {
+        height: 100vh;
+        padding: 80px 0;
+    
+        .location-title h1 {
+            @extend %section-title;
+        }
+    }
+}
+
 
 
 nav {
@@ -129,7 +125,7 @@ nav {
     .sponsor-title {
         text-align: center;
         padding: 30px 0;
-        font-size: 30px;
+        font-size: 25px;
     }
     
     .sponsors {

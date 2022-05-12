@@ -1,5 +1,5 @@
-.location .location-title h1, .contact .contact-title h1, .about .about-title h1 {
-  font-size: 25px;
+.container-location .location .location-title h1, .container-contact .contact .contact-title h1, .container-about .about .about-title h1 {
+  font-size: 35px;
   font-weight: 600;
 }
 
@@ -16,37 +16,36 @@ html {
   scroll-behavior: smooth;
 }
 
-.about {
+.container-about .about {
   height: 100vh;
-  padding: 80px 0;
+  padding: 200px 0;
 }
-.community {
-  margin: 120px 0;
+.container-community {
+  margin: 0 13%;
+}
+.container-community .community {
+  margin: 170px 0;
   display: inline-block;
   width: 100%;
 }
-.community .community-icon img {
+.container-community .community .community-icon img {
   float: right;
   opacity: 50%;
   width: 215px;
 }
-.community .community-text {
+.container-community .community .community-text {
   width: 500px;
   float: left;
 }
-.community .community-text .community-text-title {
+.container-community .community .community-text .community-text-title {
   padding-bottom: 20px;
 }
 
-.contact {
+.container-contact .contact {
   height: 100vh;
   padding: 80px 0;
 }
-.container {
-  margin: 0 13%;
-}
-
-.location {
+.container-location .location {
   height: 100vh;
   padding: 80px 0;
 }
@@ -81,7 +80,7 @@ nav img {
 .sponsors-container .sponsor-title {
   text-align: center;
   padding: 30px 0;
-  font-size: 30px;
+  font-size: 25px;
 }
 .sponsors-container .sponsors {
   display: flex;

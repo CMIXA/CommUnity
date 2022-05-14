@@ -3,6 +3,10 @@
   font-weight: 600;
 }
 
+.container-location, .container-contact, .container-community, .container-about {
+  margin: 0 15%;
+}
+
 * {
   background-color: rgb(18, 19, 22);
   box-sizing: border-box;
@@ -20,9 +24,6 @@ html {
   height: 100vh;
   padding: 200px 0;
 }
-.container-community {
-  margin: 0 13%;
-}
 .container-community .community {
   margin: 170px 0;
   display: inline-block;
@@ -37,10 +38,23 @@ html {
   width: 500px;
   float: left;
 }
+.container-community .community .community-text .community-button {
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 20px 0;
+  padding: 8px 0;
+  width: 275px;
+}
 .container-community .community .community-text .community-text-title {
   padding-bottom: 20px;
 }
 
+.container-contact {
+  margin: 0 15%;
+}
 .container-contact .contact {
   height: 100vh;
   padding: 80px 0;
@@ -71,6 +85,23 @@ nav a:hover {
 nav img {
   width: 27px;
   margin-right: 6px;
+}
+
+.signin-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+.signin-container .signin-brand {
+  margin-bottom: 100px;
+}
+.signin-container .signin-block {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 300px;
+  height: 300px;
 }
 
 .sponsors-container {

@@ -88,29 +88,32 @@ nav img {
 }
 
 .signin-container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100vw;
   height: 100vh;
 }
-.signin-container .signin-brand {
-  margin-bottom: 100px;
+.signin-container .signin-brandtitle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 30%;
 }
-.signin-container .signin-block {
+.signin-container .signin-block-container {
+  display: flex;
+  justify-content: center;
+  height: 70%;
+}
+.signin-container .signin-block-container .signin-block {
   background-color: rgba(0, 0, 0, 0.2);
-  width: 300px;
-  height: 300px;
+  width: 450px;
+  height: 400px;
 }
 
 .sponsors-container {
   opacity: 50%;
-  margin: 50px 0;
+  margin: 100px 0;
 }
 .sponsors-container .sponsor-title {
   text-align: center;
-  padding: 30px 0;
+  padding: 20px 0;
   font-size: 25px;
 }
 .sponsors-container .sponsors {
@@ -129,7 +132,7 @@ nav img {
 }
 .sponsors-container .sponsors .sponsor-item img {
   padding: 5px;
-  width: 80px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

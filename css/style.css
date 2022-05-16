@@ -51,6 +51,7 @@ html {
   float: left;
 }
 .container-community .community .community-text .community-button {
+  background-color: transparent;
   border-color: white;
   border-radius: 10px;
   border-width: 2px;
@@ -92,6 +93,10 @@ html {
 .container-location .location .location-title img {
   margin-right: 7px;
   width: 60px;
+}
+
+.landing-page {
+  background-color: rgb(16, 16, 16);
 }
 
 nav {
@@ -168,6 +173,8 @@ nav img {
 }
 .signin-container .signin-block-container .signin-block .signin-block-content p {
   font-size: 13px;
+  line-height: 18px;
+  margin: 12px 0;
 }
 .signin-container .signin-block-container .signin-block .signin-block-content form {
   display: flex;

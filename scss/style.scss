@@ -79,6 +79,7 @@ html {
             float: left;
 
             .community-button {
+                background-color: transparent;
                 border-color: white;
                 border-radius: 10px;
                 border-width: 2px;
@@ -143,6 +144,10 @@ html {
         }
     }
     @extend %container-attributes
+}
+
+.landing-page {
+    background-color: rgb(16, 16, 16);
 }
 
 nav {
@@ -240,6 +245,8 @@ nav {
 
                 p {
                     font-size: 13px;
+                    line-height: 18px;
+                    margin: 12px 0;
                 }
                 // display: flex;
                 // flex-direction: column;

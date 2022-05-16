@@ -192,14 +192,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // width: 100vw;
+    width: 100vw;
     height: 100vh;
-
-    // .signin-container-filter {
-    //     height: 100vh;
-    //     background-color: black;
-    //     position: absolute;
-    // }
 
     .signin-brandtitle {
         align-items: center;
@@ -215,7 +209,7 @@ nav {
 
         img {
             margin-right: 6px;
-            width: 40px;
+            width: 30px;
         }
     }
 
@@ -322,7 +316,7 @@ nav {
             .no-password {
                 display: flex;
                 margin-bottom: 50px;
-                margin-top: 10px;
+                margin-top: 5px;
 
                 a {
                     color: rgb(0, 145, 255);

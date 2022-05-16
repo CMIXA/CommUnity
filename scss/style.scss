@@ -1,187 +1,22 @@
+%container-attributes {
+    margin: 0 15%;
+}
+
 %section-title {
     font-size: 40px;
     font-weight: 500;
 }
 
-%container-attributes {
-    margin: 0 15%;
-}
-
-// %sponsor-item {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-// }
-
-
-* {
-    // background-color: rgb(18, 19, 22);
-    box-sizing: border-box;
-    color: rgb(255, 255, 255);
-    font-family: 'Montserrat',
-    sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    margin: 0;
-}
-
-html {
-    // background-color: rgb(23, 24, 26);
-    scroll-behavior: smooth;
-}
-
-.container-about {
-
-    .about {
-        height: 100vh;
-        padding: 200px 0;
-
-        .about-title {
-            align-items: center;
-            display: flex;
-        
-            h1 {
-                @extend %section-title;
-            }
-        
-            img {
-                margin-right: 10px;
-                width: 50px;
-            }
-        }
-    }
-    @extend %container-attributes
-}
-
-
-.container-community {
-    // background-image: url();
-
-    .community {
-        margin: 170px 0;
-        display:  inline-block;
-        width: 100%;
-
-        .community-icon {
-
-            img {
-                float: right;
-                opacity: 50%;
-                width: 215px;
-            }
-        }
-        .community-text {
-            width: 500px;
-            float: left;
-
-            .community-button {
-                background-color: transparent;
-                border-color: white;
-                border-radius: 10px;
-                border-width: 2px;
-                font-size: 1rem;
-                font-weight: 500;
-                margin: 20px 0;
-                padding: 8px 0;
-                width: 275px;
-            }
-            
-            .community-text-title {
-                padding-bottom: 20px;
-            }
-        }
-    }
-    @extend %container-attributes
-}
-
-.container-contact{
-    height: 100vh;
-    margin: 0 15%;
-    
-    .contact {
-        height: 100vh;
-        padding: 80px 0;
-
-        .contact-title {
-            align-items: center;
-            display: flex;
-
-            h1 {
-                @extend %section-title;
-            }
-
-            img{
-                margin-right: 14px;
-                width: 60px;
-            }
-        }
-    }
-    @extend %container-attributes
-}
-
-.container-location {
-
-    .location {
-        height: 100vh;
-        padding: 80px 0;
-    
-        .location-title {
-            align-items: center;
-            display: flex;
-
-            h1 {
-                @extend %section-title;
-            }
-
-            img{
-                margin-right: 7px;
-                width: 60px;
-            }
-        }
-    }
-    @extend %container-attributes
-}
-
-.landing-page {
-    background-color: rgb(16, 16, 16);
-}
-
-nav {
-    align-items: center;
-    display: flex;
-    padding: 60px 0;
+%signin-button {
+    background-color: rgb(48, 77, 194);
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 0;
+    padding: 11px;
     width: 100%;
-
-    .nav-links {
-        margin-left: auto;
-    }
-
-    .nav-title {
-        font-weight: 600;
-    }
-
-    a {
-        padding: 0 15px;
-        text-decoration: none;
-    }
-
-    a:hover {
-        opacity: 60%;
-    }
-
-    img {
-        width: 27px;
-        margin-right: 6px;
-    }
 }
 
-// 2 divs -> titlediv = 20-30% height, flex,just/align,center 
-// blockdiv = 70-80% height, flex,just,center
-.signin-container {
+%signin-page-container {
     align-items: center;
     background-color: rgb(23, 24, 26);
     background-image: url(/images/people.jpg);
@@ -194,6 +29,254 @@ nav {
     justify-content: center;
     width: 100vw;
     height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat',
+    sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// Main Page (Langing Page)
+.landing-page {
+    background-color: rgb(16, 16, 16);
+
+    // Home Section
+    .container-1-community {
+        @extend %container-attributes;
+    
+        nav {
+            align-items: center;
+            display: flex;
+            padding: 60px 0;
+            width: 100%;
+    
+            .nav-links {
+                margin-left: auto;
+            }
+    
+            .nav-title {
+                font-weight: 600;
+            }
+    
+            a {
+                padding: 0 15px;
+                text-decoration: none;
+            }
+    
+            a:hover {
+                opacity: 60%;
+            }
+    
+            img {
+                width: 27px;
+                margin-right: 6px;
+            }
+        }
+    
+        .community {
+            margin: 170px 0;
+            display: inline-block;
+            width: 100%;
+    
+            .community-icon {
+    
+                img {
+                    float: right;
+                    opacity: 50%;
+                    width: 215px;
+                }
+            }
+    
+            .community-text {
+                width: 500px;
+                float: left;
+    
+                .community-button {
+                    background-color: transparent;
+                    border-color: white;
+                    border-radius: 10px;
+                    border-width: 2px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    margin: 20px 0;
+                    padding: 8px 0;
+                    width: 275px;
+                }
+    
+                .community-text-title {
+                    padding-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    // About Section
+    .container-2-about {
+        @extend %container-attributes;
+
+        .about {
+            height: 100vh;
+            padding: 200px 0;
+
+            .about-title {
+                align-items: center;
+                display: flex;
+            
+                h1 {
+                    @extend %section-title;
+                }
+            
+                img {
+                    margin-right: 10px;
+                    width: 50px;
+                }
+            }
+        }
+    }
+
+    // Location Section
+    .container-3-location {
+        @extend %container-attributes;
+
+        .location {
+            height: 100vh;
+            padding: 80px 0;
+        
+            .location-title {
+                align-items: center;
+                display: flex;
+
+                h1 {
+                    @extend %section-title;
+                }
+
+                img{
+                    margin-right: 7px;
+                    width: 60px;
+                }
+            }
+        }
+    }
+
+    // Contact Section
+    .container-4-contact {
+        @extend %container-attributes;
+
+        .contact {
+            height: 100vh;
+            padding: 80px 0;
+
+            .contact-title {
+                align-items: center;
+                display: flex;
+    
+                h1 {
+                    @extend %section-title;
+                }
+    
+                img {
+                    margin-right: 14px;
+                    width: 60px;
+                }
+            }
+        }
+    }
+}
+
+// Password Reset Page
+.password-container {
+    @extend %signin-page-container;
+
+    .password-brandtitle {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 20%;
+        padding-top: 10px;
+
+        h1 {
+            font-weight: 600;
+            margin-right: 20px;
+        }
+        
+        img {
+            margin-right: 6px;
+            width: 30px;
+        }
+    }
+
+    .password-block-container {
+        height: 70%;
+    
+        .password-block {
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            padding: 35px 0;
+            width: auto;
+            height: auto;
+    
+            .password-block-content {
+                line-height: 45px;
+                padding: 25px 70px 50px 70px;
+                width: 100%;
+    
+                h2 {
+                    font-weight: 500;
+                }
+    
+                p {
+                    font-size: 13px;
+                    line-height: 18px;
+                    margin: 12px 0;
+                }
+    
+                form {
+                    display: flex;
+                    flex-direction: column;
+    
+                    input {
+                        background-color: transparent;
+                        border-color: rgba(255, 255, 255, 0.745);
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-width: 0.03px;
+                        margin: 5px 0 10px 0;
+                        padding: 12px;
+                    }
+    
+                    input::placeholder {
+                        color: rgba(255, 255, 255, 0.692);
+                    }
+                }
+                
+                .password-button {
+                    @extend %signin-button;
+                }
+            }
+            
+            .password-image img {
+                padding-top: 10px;
+                width: 120px
+            }
+        }
+    }
+}
+
+// Signin Page
+.signin-container {
+    @extend %signin-page-container;
 
     .signin-brandtitle {
         align-items: center;
@@ -214,9 +297,6 @@ nav {
     }
 
     .signin-block-container {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
         height: 70%;
         
         .signin-block {
@@ -242,22 +322,17 @@ nav {
                     line-height: 18px;
                     margin: 12px 0;
                 }
-                // display: flex;
-                // flex-direction: column;
 
                 form {
                     display: flex;
                     flex-direction: column;
-                    // line-height: 50px;
-                    // display: block;
-                    // vertical-align: top;
+
                     input{
                         background-color: transparent;
                         border-color: rgba(255, 255, 255, 0.745);
                         border-radius: 5px;
                         border-style: solid;
                         border-width: 0.03px;
-                        // color: aliceblue;
                         margin: 5px 0;
                         padding: 12px;
                     }
@@ -279,15 +354,11 @@ nav {
                 }
 
                 .signin-button {
-                    background-color: rgb(48, 77, 194);
-                    border-radius: 5px;
-                    border-style: solid;
-                    border-width: 0;
-                    padding: 11px;
-                    width: 100%;
+                    @extend %signin-button;
                 }
             }
         }
+
         .signin-block-extra-content {
             align-items: center;
             display: flex;
@@ -332,6 +403,7 @@ nav {
     }
 }
 
+// Sponsors - Main Page
 .sponsors-container {
     opacity: 50%;
     margin: 100px 0;

@@ -1,129 +1,22 @@
-.container-location .location .location-title h1, .container-contact .contact .contact-title h1, .container-about .about .about-title h1 {
+.landing-page .container-4-contact, .landing-page .container-3-location, .landing-page .container-2-about, .landing-page .container-1-community {
+  margin: 0 15%;
+}
+
+.landing-page .container-4-contact .contact .contact-title h1, .landing-page .container-3-location .location .location-title h1, .landing-page .container-2-about .about .about-title h1 {
   font-size: 40px;
   font-weight: 500;
 }
 
-.container-location, .container-contact, .container-community, .container-about {
-  margin: 0 15%;
-}
-
-* {
-  box-sizing: border-box;
-  color: rgb(255, 255, 255);
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  margin: 0;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.container-about .about {
-  height: 100vh;
-  padding: 200px 0;
-}
-.container-about .about .about-title {
-  align-items: center;
-  display: flex;
-}
-.container-about .about .about-title img {
-  margin-right: 10px;
-  width: 50px;
-}
-
-.container-community .community {
-  margin: 170px 0;
-  display: inline-block;
+.signin-container .signin-block-container .signin-block .signin-block-content .signin-button, .password-container .password-block-container .password-block .password-block-content .password-button {
+  background-color: rgb(48, 77, 194);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0;
+  padding: 11px;
   width: 100%;
 }
-.container-community .community .community-icon img {
-  float: right;
-  opacity: 50%;
-  width: 215px;
-}
-.container-community .community .community-text {
-  width: 500px;
-  float: left;
-}
-.container-community .community .community-text .community-button {
-  background-color: transparent;
-  border-color: white;
-  border-radius: 10px;
-  border-width: 2px;
-  font-size: 1rem;
-  font-weight: 500;
-  margin: 20px 0;
-  padding: 8px 0;
-  width: 275px;
-}
-.container-community .community .community-text .community-text-title {
-  padding-bottom: 20px;
-}
 
-.container-contact {
-  height: 100vh;
-  margin: 0 15%;
-}
-.container-contact .contact {
-  height: 100vh;
-  padding: 80px 0;
-}
-.container-contact .contact .contact-title {
-  align-items: center;
-  display: flex;
-}
-.container-contact .contact .contact-title img {
-  margin-right: 14px;
-  width: 60px;
-}
-
-.container-location .location {
-  height: 100vh;
-  padding: 80px 0;
-}
-.container-location .location .location-title {
-  align-items: center;
-  display: flex;
-}
-.container-location .location .location-title img {
-  margin-right: 7px;
-  width: 60px;
-}
-
-.landing-page {
-  background-color: rgb(16, 16, 16);
-}
-
-nav {
-  align-items: center;
-  display: flex;
-  padding: 60px 0;
-  width: 100%;
-}
-nav .nav-links {
-  margin-left: auto;
-}
-nav .nav-title {
-  font-weight: 600;
-}
-nav a {
-  padding: 0 15px;
-  text-decoration: none;
-}
-nav a:hover {
-  opacity: 60%;
-}
-nav img {
-  width: 27px;
-  margin-right: 6px;
-}
-
-.signin-container {
+.signin-container, .password-container {
   align-items: center;
   background-color: rgb(23, 24, 26);
   background-image: url(/images/people.jpg);
@@ -137,6 +30,173 @@ nav img {
   width: 100vw;
   height: 100vh;
 }
+
+* {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing-page {
+  background-color: rgb(16, 16, 16);
+}
+.landing-page .container-1-community nav {
+  align-items: center;
+  display: flex;
+  padding: 60px 0;
+  width: 100%;
+}
+.landing-page .container-1-community nav .nav-links {
+  margin-left: auto;
+}
+.landing-page .container-1-community nav .nav-title {
+  font-weight: 600;
+}
+.landing-page .container-1-community nav a {
+  padding: 0 15px;
+  text-decoration: none;
+}
+.landing-page .container-1-community nav a:hover {
+  opacity: 60%;
+}
+.landing-page .container-1-community nav img {
+  width: 27px;
+  margin-right: 6px;
+}
+.landing-page .container-1-community .community {
+  margin: 170px 0;
+  display: inline-block;
+  width: 100%;
+}
+.landing-page .container-1-community .community .community-icon img {
+  float: right;
+  opacity: 50%;
+  width: 215px;
+}
+.landing-page .container-1-community .community .community-text {
+  width: 500px;
+  float: left;
+}
+.landing-page .container-1-community .community .community-text .community-button {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 20px 0;
+  padding: 8px 0;
+  width: 275px;
+}
+.landing-page .container-1-community .community .community-text .community-text-title {
+  padding-bottom: 20px;
+}
+.landing-page .container-2-about .about {
+  height: 100vh;
+  padding: 200px 0;
+}
+.landing-page .container-2-about .about .about-title {
+  align-items: center;
+  display: flex;
+}
+.landing-page .container-2-about .about .about-title img {
+  margin-right: 10px;
+  width: 50px;
+}
+.landing-page .container-3-location .location {
+  height: 100vh;
+  padding: 80px 0;
+}
+.landing-page .container-3-location .location .location-title {
+  align-items: center;
+  display: flex;
+}
+.landing-page .container-3-location .location .location-title img {
+  margin-right: 7px;
+  width: 60px;
+}
+.landing-page .container-4-contact .contact {
+  height: 100vh;
+  padding: 80px 0;
+}
+.landing-page .container-4-contact .contact .contact-title {
+  align-items: center;
+  display: flex;
+}
+.landing-page .container-4-contact .contact .contact-title img {
+  margin-right: 14px;
+  width: 60px;
+}
+
+.password-container .password-brandtitle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 20%;
+  padding-top: 10px;
+}
+.password-container .password-brandtitle h1 {
+  font-weight: 600;
+  margin-right: 20px;
+}
+.password-container .password-brandtitle img {
+  margin-right: 6px;
+  width: 30px;
+}
+.password-container .password-block-container {
+  height: 70%;
+}
+.password-container .password-block-container .password-block {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+  width: auto;
+  height: auto;
+}
+.password-container .password-block-container .password-block .password-block-content {
+  line-height: 45px;
+  padding: 25px 70px 50px 70px;
+  width: 100%;
+}
+.password-container .password-block-container .password-block .password-block-content h2 {
+  font-weight: 500;
+}
+.password-container .password-block-container .password-block .password-block-content p {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 12px 0;
+}
+.password-container .password-block-container .password-block .password-block-content form {
+  display: flex;
+  flex-direction: column;
+}
+.password-container .password-block-container .password-block .password-block-content form input {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.745);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0.03px;
+  margin: 5px 0 10px 0;
+  padding: 12px;
+}
+.password-container .password-block-container .password-block .password-block-content form input::placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+.password-container .password-block-container .password-block .password-image img {
+  padding-top: 10px;
+  width: 120px;
+}
+
 .signin-container .signin-brandtitle {
   align-items: center;
   display: flex;
@@ -199,14 +259,6 @@ nav img {
 }
 .signin-container .signin-block-container .signin-block .signin-block-content form .signin-remember .remember-me {
   padding-left: 5px;
-}
-.signin-container .signin-block-container .signin-block .signin-block-content .signin-button {
-  background-color: rgb(48, 77, 194);
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 0;
-  padding: 11px;
-  width: 100%;
 }
 .signin-container .signin-block-container .signin-block-extra-content {
   align-items: center;

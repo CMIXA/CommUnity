@@ -138,7 +138,6 @@ nav img {
   width: 50px;
 }
 .signin-container .signin-block-container {
-  flex-direction: column;
   height: 70%;
 }
 .signin-container .signin-block-container .signin-block {
@@ -180,6 +179,48 @@ nav img {
 }
 .signin-container .signin-block-container .signin-block .signin-block-content form .signin-remember .remember-me {
   padding-left: 5px;
+}
+.signin-container .signin-block-container .signin-block .signin-block-content .signin-button {
+  background-color: rgb(0, 42, 211);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0;
+  padding: 11px;
+  width: 100%;
+}
+.signin-container .signin-block-container .signin-block-extra-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-account {
+  display: flex;
+  margin: 10px;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-account a {
+  color: rgb(0, 145, 255);
+  font-weight: 500;
+  text-decoration: none;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-account a:hover {
+  text-decoration: underline;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-account p {
+  padding-right: 5px;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-password {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-password a {
+  color: rgb(0, 145, 255);
+  font-weight: 500;
+  text-decoration: none;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-password a:hover {
+  text-decoration: underline;
 }
 
 .sponsors-container {

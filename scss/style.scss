@@ -12,6 +12,7 @@
     border-radius: 5px;
     border-style: solid;
     border-width: 0;
+    cursor: pointer;
     padding: 11px;
     width: 100%;
 }
@@ -44,11 +45,11 @@ html {
     scroll-behavior: smooth;
 }
 
-// Main Page (Langing Page)
+// *** Main Page (Langing Page)
 .landing-page {
     background-color: rgb(16, 16, 16);
 
-    // Home Section
+    // Home Section-1
     .container-1-community {
         @extend %container-attributes;
     
@@ -116,9 +117,42 @@ html {
                 }
             }
         }
+        // Sponsors - Under Section-1
+        .sponsors-container {
+            opacity: 50%;
+            margin: 100px 0;
+        
+            .sponsor-title {
+                text-align: center;
+                padding: 20px 0;
+                font-size: 25px;
+            }
+        
+            .sponsors {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                .sponsor-item {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0 15%;
+        
+                    h3 {
+                        font-size: 25px;
+                    }
+        
+                    img {
+                        padding: 5px;
+                        width: 100px;
+                    }
+                }
+            }
+        }
     }
 
-    // About Section
+    // About Section-2
     .container-2-about {
         @extend %container-attributes;
 
@@ -142,7 +176,7 @@ html {
         }
     }
 
-    // Location Section
+    // Location Section-3
     .container-3-location {
         @extend %container-attributes;
 
@@ -166,7 +200,7 @@ html {
         }
     }
 
-    // Contact Section
+    // Contact Section-4
     .container-4-contact {
         @extend %container-attributes;
 
@@ -191,7 +225,7 @@ html {
     }
 }
 
-// Password Reset Page
+// *** Password Reset Page
 .password-container {
     @extend %signin-page-container;
 
@@ -274,7 +308,7 @@ html {
     }
 }
 
-// Signin Page
+// *** Signin Page
 .signin-container {
     @extend %signin-page-container;
 
@@ -398,40 +432,6 @@ html {
                 a:hover {
                     text-decoration: underline;
                 }
-            }
-        }
-    }
-}
-
-// Sponsors - Main Page
-.sponsors-container {
-    opacity: 50%;
-    margin: 100px 0;
-
-    .sponsor-title {
-        text-align: center;
-        padding: 20px 0;
-        font-size: 25px;
-    }
-    
-    .sponsors {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    
-        .sponsor-item {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            padding: 0 15%;
-
-            h3 {
-                font-size: 25px;
-            }
-
-            img {
-                padding: 5px;
-                width: 100px;
             }
         }
     }

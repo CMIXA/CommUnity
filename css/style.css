@@ -12,6 +12,7 @@
   border-radius: 5px;
   border-style: solid;
   border-width: 0;
+  cursor: pointer;
   padding: 11px;
   width: 100%;
 }
@@ -96,6 +97,33 @@ html {
 }
 .landing-page .container-1-community .community .community-text .community-text-title {
   padding-bottom: 20px;
+}
+.landing-page .container-1-community .sponsors-container {
+  opacity: 50%;
+  margin: 100px 0;
+}
+.landing-page .container-1-community .sponsors-container .sponsor-title {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+.landing-page .container-1-community .sponsors-container .sponsors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-page .container-1-community .sponsors-container .sponsors .sponsor-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15%;
+}
+.landing-page .container-1-community .sponsors-container .sponsors .sponsor-item h3 {
+  font-size: 25px;
+}
+.landing-page .container-1-community .sponsors-container .sponsors .sponsor-item img {
+  padding: 5px;
+  width: 100px;
 }
 .landing-page .container-2-about .about {
   height: 100vh;
@@ -293,34 +321,6 @@ html {
 }
 .signin-container .signin-block-container .signin-block-extra-content .no-password a:hover {
   text-decoration: underline;
-}
-
-.sponsors-container {
-  opacity: 50%;
-  margin: 100px 0;
-}
-.sponsors-container .sponsor-title {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 25px;
-}
-.sponsors-container .sponsors {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.sponsors-container .sponsors .sponsor-item {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  padding: 0 15%;
-}
-.sponsors-container .sponsors .sponsor-item h3 {
-  font-size: 25px;
-}
-.sponsors-container .sponsors .sponsor-item img {
-  padding: 5px;
-  width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

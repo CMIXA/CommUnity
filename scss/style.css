@@ -1,16 +1,17 @@
-.container-location .location .location-title h1, .container-contact .contact .contact-title h1, .container-about .about .about-title h1 {
+.container-about .about .about-title h1, .container-contact .contact .contact-title h1, .container-location .location .location-title h1 {
   font-size: 40px;
   font-weight: 500;
 }
 
-.container-location, .container-contact, .container-community, .container-about {
+.container-about, .container-community, .container-contact, .container-location {
   margin: 0 15%;
 }
 
 * {
-  box-sizing: border-box;
-  color: rgb(255, 255, 255);
-  font-family: "Montserrat", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -23,10 +24,16 @@ html {
   height: 100vh;
   padding: 200px 0;
 }
+
 .container-about .about .about-title {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .container-about .about .about-title img {
   margin-right: 10px;
   width: 50px;
@@ -37,15 +44,18 @@ html {
   display: inline-block;
   width: 100%;
 }
+
 .container-community .community .community-icon img {
   float: right;
   opacity: 50%;
   width: 215px;
 }
+
 .container-community .community .community-text {
   width: 500px;
   float: left;
 }
+
 .container-community .community .community-text .community-button {
   border-color: white;
   border-radius: 10px;
@@ -56,6 +66,7 @@ html {
   padding: 8px 0;
   width: 275px;
 }
+
 .container-community .community .community-text .community-text-title {
   padding-bottom: 20px;
 }
@@ -64,14 +75,21 @@ html {
   height: 100vh;
   margin: 0 15%;
 }
+
 .container-contact .contact {
   height: 100vh;
   padding: 80px 0;
 }
+
 .container-contact .contact .contact-title {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .container-contact .contact .contact-title img {
   margin-right: 14px;
   width: 60px;
@@ -81,93 +99,144 @@ html {
   height: 100vh;
   padding: 80px 0;
 }
+
 .container-location .location .location-title {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .container-location .location .location-title img {
   margin-right: 7px;
   width: 60px;
 }
 
 nav {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 60px 0;
   width: 100%;
 }
+
 nav .nav-links {
   margin-left: auto;
 }
+
 nav .nav-title {
   font-weight: 600;
 }
+
 nav a {
   padding: 0 15px;
   text-decoration: none;
 }
+
 nav a:hover {
   opacity: 60%;
 }
+
 nav img {
   width: 27px;
   margin-right: 6px;
 }
 
 .signin-container {
-  align-items: center;
-  background-color: rgb(23, 24, 26);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #17181a;
   background-image: url(/images/people.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100vh;
 }
+
 .signin-container .signin-brandtitle {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 20%;
   padding-top: 10px;
 }
+
 .signin-container .signin-brandtitle h1 {
   font-weight: 600;
   margin-right: 20px;
 }
+
 .signin-container .signin-brandtitle img {
   margin-right: 6px;
   width: 50px;
 }
+
 .signin-container .signin-block-container {
   height: 70%;
 }
+
 .signin-container .signin-block-container .signin-block {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 450px;
   height: 400px;
 }
+
 .signin-container .signin-block-container .signin-block .signin-block-content {
   line-height: 45px;
   margin: 0 70px;
   width: 100%;
 }
+
 .signin-container .signin-block-container .signin-block .signin-block-content h2 {
   font-weight: 500;
 }
+
 .signin-container .signin-block-container .signin-block .signin-block-content p {
   font-size: 13px;
 }
+
 .signin-container .signin-block-container .signin-block .signin-block-content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .signin-container .signin-block-container .signin-block .signin-block-content form input {
   background-color: transparent;
   border-color: rgba(255, 255, 255, 0.745);
@@ -177,55 +246,94 @@ nav img {
   margin: 5px 0;
   padding: 12px;
 }
+
+.signin-container .signin-block-container .signin-block .signin-block-content form input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+.signin-container .signin-block-container .signin-block .signin-block-content form input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+.signin-container .signin-block-container .signin-block .signin-block-content form input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+
 .signin-container .signin-block-container .signin-block .signin-block-content form input::placeholder {
   color: rgba(255, 255, 255, 0.692);
 }
+
 .signin-container .signin-block-container .signin-block .signin-block-content form .signin-remember {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .signin-container .signin-block-container .signin-block .signin-block-content form .signin-remember .remember-me {
   padding-left: 5px;
 }
+
 .signin-container .signin-block-container .signin-block .signin-block-content .signin-button {
-  background-color: rgb(0, 42, 211);
+  background-color: #002ad3;
   border-radius: 5px;
   border-style: solid;
   border-width: 0;
   padding: 11px;
   width: 100%;
 }
+
 .signin-container .signin-block-container .signin-block-extra-content {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 25px;
 }
+
 .signin-container .signin-block-container .signin-block-extra-content .no-account {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin: 10px;
 }
+
 .signin-container .signin-block-container .signin-block-extra-content .no-account a {
-  color: rgb(0, 145, 255);
+  color: #0091ff;
   font-weight: 500;
   text-decoration: none;
 }
+
 .signin-container .signin-block-container .signin-block-extra-content .no-account a:hover {
   text-decoration: underline;
 }
+
 .signin-container .signin-block-container .signin-block-extra-content .no-account p {
   padding-right: 5px;
 }
+
 .signin-container .signin-block-container .signin-block-extra-content .no-password {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
   margin-top: 10px;
 }
+
 .signin-container .signin-block-container .signin-block-extra-content .no-password a {
-  color: rgb(0, 145, 255);
+  color: #0091ff;
   font-weight: 500;
   text-decoration: none;
 }
+
 .signin-container .signin-block-container .signin-block-extra-content .no-password a:hover {
   text-decoration: underline;
 }
@@ -234,28 +342,45 @@ nav img {
   opacity: 50%;
   margin: 100px 0;
 }
+
 .sponsors-container .sponsor-title {
   text-align: center;
   padding: 20px 0;
   font-size: 25px;
 }
+
 .sponsors-container .sponsors {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .sponsors-container .sponsors .sponsor-item {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0 15%;
 }
+
 .sponsors-container .sponsors .sponsor-item h3 {
   font-size: 25px;
 }
+
 .sponsors-container .sponsors .sponsor-item img {
   padding: 5px;
   width: 100px;
 }
-
 /*# sourceMappingURL=style.css.map */

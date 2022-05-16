@@ -15,6 +15,10 @@
   padding: 0;
 }
 
+body {
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -121,6 +125,7 @@ nav img {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -139,14 +144,14 @@ nav img {
 }
 .signin-container .signin-brandtitle img {
   margin-right: 6px;
-  width: 50px;
+  width: 40px;
 }
 .signin-container .signin-block-container {
   height: 70%;
 }
 .signin-container .signin-block-container .signin-block {
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -188,7 +193,7 @@ nav img {
   padding-left: 5px;
 }
 .signin-container .signin-block-container .signin-block .signin-block-content .signin-button {
-  background-color: rgb(0, 42, 211);
+  background-color: rgb(48, 77, 194);
   border-radius: 5px;
   border-style: solid;
   border-width: 0;

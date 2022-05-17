@@ -64,7 +64,7 @@ html {
   text-decoration: none;
 }
 .landing-page .container-1-community nav a:hover {
-  opacity: 60%;
+  color: rgb(0, 145, 255);
 }
 .landing-page .container-1-community nav img {
   width: 27px;
@@ -152,6 +152,21 @@ html {
 .landing-page .container-4-contact .contact {
   height: 100vh;
   padding: 80px 0;
+}
+.landing-page .container-4-contact .contact .contact-text-container {
+  display: flex;
+  margin: 80px 0;
+  width: 100%;
+}
+.landing-page .container-4-contact .contact .contact-text-container .contact-form {
+  width: 70%;
+}
+.landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements {
+  display: flex;
+  flex-direction: column;
+}
+.landing-page .container-4-contact .contact .contact-text-container .contact-sidetext {
+  width: 30%;
 }
 .landing-page .container-4-contact .contact .contact-title {
   align-items: center;

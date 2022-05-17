@@ -206,32 +206,72 @@ html {
         @extend %container-attributes;
 
         .contact {
-            height: 100vh;
+            // height: 100vh;
             padding: 80px 0;
 
             .contact-text-container {
                 display: flex;
+                flex-wrap: wrap;
                 margin: 80px 0;
                 width: 100%;
+                height: auto;
 
                 .contact-form {
-                    width: 70%;
+                    margin-left: auto;
+                    width: 500px;
 
-                    .contact-form-elements{
+                    .contact-form-elements {
                         display: flex;
                         flex-direction: column;
-                        // justify-content: right;
+
+                        .contact-form-message {
+
+                            textarea {
+                                color: black;
+                                margin-top: 5px;
+                                width: 430px;
+                            }
+                        }
+
+                        .contact-form-input {
+                            margin: 0 0 10px 0;
+                            // width: 150px;
+
+                            input {
+                                border-radius: 5px;
+                                border-style: solid;
+                                color: black;
+                                padding: 8px;
+                                margin: 5px 0;
+                                // width: 150px;
+                            }
+                        }
+
+                        .contact-button {
+                            margin: 10px 0;
+                            width: 100px;
+                        }
                     }
                 }
 
                 .contact-sidetext {
-                    width: 30%;
-                }
+                    width: 300px;
+                    margin-right: 100px;
 
-                // .contact-form form{
-                //     display: flex;
-                //     flex-direction: column;
-                // }
+                    .contact-methods {
+                        margin-top: 40px;
+
+                        div {
+                            align-items: center;
+                            display: flex;
+                            padding: 15px 0;
+                        }
+
+                        img {
+                            width: 30px;
+                        }
+                    }
+                }
             }
 
             .contact-title {

@@ -1,5 +1,5 @@
 %container-attributes {
-    margin: 0 15%;
+    margin: 0 12%;
 }
 
 %section-title {
@@ -47,7 +47,7 @@ html {
 
 // *** Main Page (Langing Page)
 .landing-page {
-    background-color: rgb(16, 16, 16);
+    background-color: rgb(31, 31, 31);
 
     // Home Section-1
     .container-1-community {
@@ -218,7 +218,8 @@ html {
 
                 .contact-form {
                     margin-left: auto;
-                    width: 500px;
+                    // width: 50%;
+                    min-width: 400px;
 
                     .contact-form-elements {
                         display: flex;
@@ -227,15 +228,16 @@ html {
                         .contact-form-message {
 
                             textarea {
+                                border-radius: 5px;
                                 color: black;
                                 margin-top: 5px;
+                                padding: 8px;
                                 width: 430px;
                             }
                         }
 
                         .contact-form-input {
                             margin: 0 0 10px 0;
-                            // width: 150px;
 
                             input {
                                 border-radius: 5px;
@@ -243,20 +245,28 @@ html {
                                 color: black;
                                 padding: 8px;
                                 margin: 5px 0;
-                                // width: 150px;
+                                width: 430px;
                             }
                         }
 
                         .contact-button {
+                            background-color: transparent;
+                            border-color: aliceblue;
+                            border-radius: 5px;
+                            border-width: 1px;
                             margin: 10px 0;
-                            width: 100px;
+                            height: 35px;
+                            width: 120px;
                         }
                     }
                 }
 
                 .contact-sidetext {
-                    width: 300px;
-                    margin-right: 100px;
+                    // width: 50%;
+                    min-width: 300px;
+                    // margin: 0 10px 20px 0;
+                    // margin: 5px;
+                    padding-right: 20px;
 
                     .contact-methods {
                         margin-top: 40px;
@@ -267,8 +277,13 @@ html {
                             padding: 15px 0;
                         }
 
+                        h3 {
+                            margin-bottom: 20px;
+                        }
+
                         img {
-                            width: 30px;
+                            padding-right: 5px;
+                            width: 27px;
                         }
                     }
                 }
@@ -284,7 +299,7 @@ html {
     
                 img {
                     margin-right: 14px;
-                    width: 60px;
+                    width: 50px;
                 }
             }
         }

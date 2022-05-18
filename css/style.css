@@ -1,5 +1,5 @@
 .landing-page .container-4-contact, .landing-page .container-3-location, .landing-page .container-2-about, .landing-page .container-1-community {
-  margin: 0 15%;
+  margin: 0 12%;
 }
 
 .landing-page .container-4-contact .contact .contact-title h1, .landing-page .container-3-location .location .location-title h1, .landing-page .container-2-about .about .about-title h1 {
@@ -45,7 +45,7 @@ html {
 }
 
 .landing-page {
-  background-color: rgb(16, 16, 16);
+  background-color: rgb(31, 31, 31);
 }
 .landing-page .container-1-community nav {
   align-items: center;
@@ -161,15 +161,17 @@ html {
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-form {
   margin-left: auto;
-  width: 500px;
+  min-width: 400px;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements {
   display: flex;
   flex-direction: column;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements .contact-form-message textarea {
+  border-radius: 5px;
   color: black;
   margin-top: 5px;
+  padding: 8px;
   width: 430px;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements .contact-form-input {
@@ -181,14 +183,20 @@ html {
   color: black;
   padding: 8px;
   margin: 5px 0;
+  width: 430px;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements .contact-button {
+  background-color: transparent;
+  border-color: aliceblue;
+  border-radius: 5px;
+  border-width: 1px;
   margin: 10px 0;
-  width: 100px;
+  height: 35px;
+  width: 120px;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-sidetext {
-  width: 300px;
-  margin-right: 100px;
+  min-width: 300px;
+  padding-right: 20px;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-sidetext .contact-methods {
   margin-top: 40px;
@@ -198,8 +206,12 @@ html {
   display: flex;
   padding: 15px 0;
 }
+.landing-page .container-4-contact .contact .contact-text-container .contact-sidetext .contact-methods h3 {
+  margin-bottom: 20px;
+}
 .landing-page .container-4-contact .contact .contact-text-container .contact-sidetext .contact-methods img {
-  width: 30px;
+  padding-right: 5px;
+  width: 27px;
 }
 .landing-page .container-4-contact .contact .contact-title {
   align-items: center;
@@ -207,7 +219,7 @@ html {
 }
 .landing-page .container-4-contact .contact .contact-title img {
   margin-right: 14px;
-  width: 60px;
+  width: 50px;
 }
 
 .password-container .password-brandtitle {

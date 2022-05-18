@@ -45,7 +45,7 @@ html {
 }
 
 .landing-page {
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(23, 23, 23);
 }
 .landing-page .container-1-community nav {
   align-items: center;
@@ -80,7 +80,7 @@ html {
 .landing-page .container-1-community .community .community-icon img {
   padding-bottom: 30px;
   opacity: 50%;
-  width: 230px;
+  max-width: 250px;
 }
 .landing-page .container-1-community .community .community-text {
   width: 500px;
@@ -173,7 +173,7 @@ html {
   color: black;
   margin-top: 5px;
   padding: 8px;
-  width: 430px;
+  width: 400px;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements .contact-form-input {
   margin: 0 0 10px 0;
@@ -184,14 +184,14 @@ html {
   color: black;
   padding: 8px;
   margin: 5px 0;
-  width: 430px;
+  width: 400px;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements .contact-button {
   background-color: transparent;
   border-color: aliceblue;
   border-radius: 5px;
   border-width: 1px;
-  margin: 10px 0;
+  margin: 20px 0;
   height: 35px;
   width: 120px;
 }

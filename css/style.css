@@ -72,17 +72,18 @@ html {
 }
 .landing-page .container-1-community .community {
   margin: 170px 0;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
   width: 100%;
 }
 .landing-page .container-1-community .community .community-icon img {
-  float: right;
+  padding-bottom: 30px;
   opacity: 50%;
-  width: 215px;
+  width: 230px;
 }
 .landing-page .container-1-community .community .community-text {
   width: 500px;
-  float: left;
 }
 .landing-page .container-1-community .community .community-text .community-button {
   background-color: transparent;
@@ -155,12 +156,12 @@ html {
 .landing-page .container-4-contact .contact .contact-text-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   margin: 80px 0;
   width: 100%;
   height: auto;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-form {
-  margin-left: auto;
   min-width: 400px;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements {
@@ -196,6 +197,7 @@ html {
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-sidetext {
   min-width: 300px;
+  padding-bottom: 30px;
   padding-right: 20px;
 }
 .landing-page .container-4-contact .contact .contact-text-container .contact-sidetext .contact-methods {

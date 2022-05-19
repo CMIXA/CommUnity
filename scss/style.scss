@@ -8,6 +8,16 @@
     font-weight: 500;
 }
 
+%signin-block {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 35px 0;
+}
+
 %signin-button {
     background-color: rgb(48, 77, 194);
     border-radius: 5px;
@@ -16,6 +26,24 @@
     cursor: pointer;
     padding: 11px;
     width: 100%;
+}
+
+%signin-logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 20%;
+    padding: 10px 0 10px 0;
+    
+    h1 {
+        font-weight: 600;
+        margin-right: 20px;
+    }
+    
+    img {
+        margin-right: 6px;
+        width: 30px;
+    }
 }
 
 %signin-page-container {
@@ -29,7 +57,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    // width: 100vw;
     height: 100vh;
 }
 
@@ -96,7 +124,7 @@ html {
                 img {
                     padding-bottom: 30px;
                     opacity: 50%;
-                    max-width: 250px;
+                    // max-width: 250px;
                     // min-width: 150px;
                 }
             }
@@ -308,36 +336,14 @@ html {
     @extend %signin-page-container;
 
     .password-brandtitle {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        height: 20%;
-        padding-top: 10px;
-
-        h1 {
-            font-weight: 600;
-            margin-right: 20px;
-        }
-        
-        img {
-            margin-right: 6px;
-            width: 30px;
-        }
+        @extend %signin-logo;
     }
 
     .password-block-container {
-        height: 70%;
+        height: 80%;
     
         .password-block {
-            align-items: center;
-            background-color: rgba(0, 0, 0, 0.8);
-            border-radius: 20px;
-            flex-direction: column;
-            display: flex;
-            justify-content: center;
-            padding: 35px 0;
-            width: auto;
-            height: auto;
+            @extend %signin-block;
     
             .password-block-content {
                 line-height: 45px;
@@ -391,25 +397,12 @@ html {
     @extend %signin-page-container;
 
     .signin-brandtitle {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        height: 20%;
-        padding-top: 10px;
-
-        h1 {
-            font-weight: 600;
-            margin-right: 20px;
-        }
-
-        img {
-            margin-right: 6px;
-            width: 30px;
-        }
+        @extend %signin-logo;
     }
 
     .signin-block-container {
-        height: 70%;
+        height: 80%;
+        margin-top: 60px;
         
         .signin-block {
             align-items: center;
@@ -510,6 +503,66 @@ html {
                     text-decoration: underline;
                 }
             }
+        }
+    }
+}
+
+.signup-container {
+    @extend %signin-page-container;
+
+    .signup-brandtitle {
+        @extend %signin-logo;
+    }
+
+    .signup-block-container {
+        height: 80%;
+
+        .signup-block {
+            @extend %signin-block;
+        
+            .signup-block-content {
+                line-height: 45px;
+                padding: 25px 70px 50px 70px;
+                width: 460px;
+        
+                h2 {
+                    font-weight: 500;
+                }
+        
+                p {
+                    font-size: 13px;
+                    line-height: 18px;
+                    margin: 12px 0;
+                }
+        
+                form {
+                    display: flex;
+                    flex-direction: column;
+        
+                    input {
+                        background-color: transparent;
+                        border-color: rgba(255, 255, 255, 0.745);
+                        border-radius: 5px;
+                        border-style: solid;
+                        border-width: 0.03px;
+                        margin: 5px 0 10px 0;
+                        padding: 12px;
+                    }
+        
+                    input::placeholder {
+                        color: rgba(255, 255, 255, 0.692);
+                    }
+                }
+        
+                .signup-button {
+                    @extend %signin-button;
+                }
+            }
+        
+            // .signup-image img {
+            //     padding-top: 10px;
+            //     width: 120px
+            // }
         }
     }
 }

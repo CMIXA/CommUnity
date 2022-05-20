@@ -1,6 +1,16 @@
 %container-attributes {
-    height: 1000px;
+    // height: 1000px;
+    height: auto;
     margin: 0 12%;
+}
+
+%link-decoration {
+    color: rgb(113, 136, 225);
+    text-decoration: none;
+}
+
+%p-text {
+    line-height: 30px;
 }
 
 %section-title {
@@ -129,7 +139,7 @@ html {
             }
     
             .nav-title {
-                font-weight: 600;
+                font-weight: 700;
             }
     
             a {
@@ -219,40 +229,6 @@ html {
             }
         }
     }
-    // Sponsors - Under Section-1
-    // .sponsors-container {
-    //     height: 300px;
-    //     opacity: 50%;
-    //     margin: 100px 0;
-    
-    //     .sponsor-title {
-    //         text-align: center;
-    //         padding: 20px 0;
-    //         font-size: 25px;
-    //     }
-    
-    //     .sponsors {
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: center;
-    
-    //         .sponsor-item {
-    //             align-items: center;
-    //             display: flex;
-    //             flex-direction: column;
-    //             padding: 0 15%;
-    
-    //             h3 {
-    //                 font-size: 25px;
-    //             }
-    
-    //             img {
-    //                 padding: 5px;
-    //                 width: 100px;
-    //             }
-    //         }
-    //     }
-    // }
 
     // About Section-2
     .container-2-about {
@@ -261,9 +237,14 @@ html {
         .about {
             padding: 200px 0;
 
+            p {
+                @extend %p-text;
+            }
+
             .about-title {
                 align-items: center;
                 display: flex;
+                padding-bottom: 30px;
             
                 h1 {
                     @extend %section-title;
@@ -272,6 +253,19 @@ html {
                 img {
                     margin-right: 10px;
                     width: 50px;
+                }
+            }
+
+            .about-how {
+                margin: 100px 0;
+
+                a {
+                    @extend %link-decoration;
+                }
+                
+                h2 {
+                    font-weight: 300;
+                    padding-bottom: 20px;
                 }
             }
         }

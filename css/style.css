@@ -1,6 +1,15 @@
 .landing-page .container-4-contact, .landing-page .container-3-location, .landing-page .container-2-about, .landing-page .container-1-community {
-  height: 1000px;
+  height: auto;
   margin: 0 12%;
+}
+
+.landing-page .container-2-about .about .about-how a {
+  color: rgb(113, 136, 225);
+  text-decoration: none;
+}
+
+.landing-page .container-2-about .about p {
+  line-height: 30px;
 }
 
 .landing-page .container-4-contact .contact .contact-title h1, .landing-page .container-3-location .location .location-title h1, .landing-page .container-2-about .about .about-title h1 {
@@ -114,7 +123,7 @@ html {
   margin-left: auto;
 }
 .landing-page .container-1-community nav .nav-title {
-  font-weight: 600;
+  font-weight: 700;
 }
 .landing-page .container-1-community nav a {
   padding: 0 15px;
@@ -189,10 +198,18 @@ html {
 .landing-page .container-2-about .about .about-title {
   align-items: center;
   display: flex;
+  padding-bottom: 30px;
 }
 .landing-page .container-2-about .about .about-title img {
   margin-right: 10px;
   width: 50px;
+}
+.landing-page .container-2-about .about .about-how {
+  margin: 100px 0;
+}
+.landing-page .container-2-about .about .about-how h2 {
+  font-weight: 300;
+  padding-bottom: 20px;
 }
 .landing-page .container-3-location .location {
   padding: 80px 0;

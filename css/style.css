@@ -1,4 +1,4 @@
-.landing-page .container-4-contact, .landing-page .container-3-location, .landing-page .container-2-about, .landing-page .container-1-community {
+.landing-page .container-x-footer, .landing-page .container-4-contact, .landing-page .container-3-location, .landing-page .container-2-about, .landing-page .container-1-community {
   height: auto;
   margin: 0 12%;
 }
@@ -8,12 +8,12 @@
   text-decoration: none;
 }
 
-.landing-page .container-2-about .about p {
+.landing-page .container-x-footer, .landing-page .container-2-about .about p {
   line-height: 30px;
 }
 
 .landing-page .container-4-contact .contact .contact-title h1, .landing-page .container-3-location .location .location-title h1, .landing-page .container-2-about .about .about-title h1 {
-  font-size: 40px;
+  font-size: 37px;
   font-weight: 500;
 }
 
@@ -137,7 +137,7 @@ html {
   margin-right: 6px;
 }
 .landing-page .container-1-community .community {
-  margin: 170px 0;
+  margin: 150px 0 80px 0;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
@@ -165,9 +165,8 @@ html {
   padding-bottom: 20px;
 }
 .landing-page .container-1-community .sponsors-container {
-  height: 300px;
   opacity: 90%;
-  margin: 100px 0;
+  padding: 100px 0;
 }
 .landing-page .container-1-community .sponsors-container .sponsor-title {
   text-align: center;
@@ -193,7 +192,7 @@ html {
   width: 100px;
 }
 .landing-page .container-2-about .about {
-  padding: 200px 0;
+  padding: 100px 0;
 }
 .landing-page .container-2-about .about .about-title {
   align-items: center;
@@ -212,7 +211,7 @@ html {
   padding-bottom: 20px;
 }
 .landing-page .container-3-location .location {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 .landing-page .container-3-location .location .location-title {
   align-items: center;
@@ -223,7 +222,7 @@ html {
   width: 60px;
 }
 .landing-page .container-4-contact .contact {
-  padding: 80px 0;
+  padding: 100px 0;
 }
 .landing-page .container-4-contact .contact .contact-text-container {
   display: flex;
@@ -294,6 +293,20 @@ html {
 .landing-page .container-4-contact .contact .contact-title img {
   margin-right: 14px;
   width: 50px;
+}
+.landing-page .container-x-footer .footer {
+  padding: 80px 0;
+}
+.landing-page .container-x-footer .footer .footer-socialmedia {
+  display: flex;
+  justify-content: center;
+}
+.landing-page .container-x-footer .footer .footer-socialmedia img {
+  margin: 20px;
+  width: 50px;
+}
+.landing-page .container-x-footer .footer .footer-text {
+  text-align: center;
 }
 
 .password-container .password-block-container {

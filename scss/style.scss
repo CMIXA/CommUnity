@@ -1,5 +1,5 @@
 %container-attributes {
-    height: 100vh;
+    height: 1000px;
     margin: 0 12%;
 }
 
@@ -20,7 +20,7 @@
 
 %signin-block-content {
     line-height: 45px;
-    padding: 25px 70px 50px 70px;
+    padding: 15px 70px 20px 70px;
     width: 460px;
     
     h2 {
@@ -67,8 +67,8 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 20%;
-    padding: 40px 0 10px 0;
+    height: 10%;
+    padding: 40px 0 40px 0;
     
     h1 {
         font-weight: 600;
@@ -112,6 +112,7 @@ html {
 // *** Main Page (Langing Page)
 .landing-page {
     background-color: rgb(23, 23, 23);
+    height: auto;
 
     // Home Section-1
     .container-1-community {
@@ -137,8 +138,8 @@ html {
             }
     
             a:hover {
-                color:rgb(0, 145, 255);
-                // opacity: 60%;
+                // color:rgb(0, 145, 255);
+                opacity: 60%;
             }
     
             img {
@@ -159,8 +160,6 @@ html {
                 img {
                     padding-bottom: 30px;
                     opacity: 50%;
-                    // max-width: 250px;
-                    // min-width: 150px;
                 }
             }
     
@@ -184,9 +183,11 @@ html {
                 }
             }
         }
+
         // Sponsors - Under Section-1
         .sponsors-container {
-            opacity: 50%;
+            height: 300px;
+            opacity: 90%;
             margin: 100px 0;
         
             .sponsor-title {
@@ -218,6 +219,40 @@ html {
             }
         }
     }
+    // Sponsors - Under Section-1
+    // .sponsors-container {
+    //     height: 300px;
+    //     opacity: 50%;
+    //     margin: 100px 0;
+    
+    //     .sponsor-title {
+    //         text-align: center;
+    //         padding: 20px 0;
+    //         font-size: 25px;
+    //     }
+    
+    //     .sponsors {
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    
+    //         .sponsor-item {
+    //             align-items: center;
+    //             display: flex;
+    //             flex-direction: column;
+    //             padding: 0 15%;
+    
+    //             h3 {
+    //                 font-size: 25px;
+    //             }
+    
+    //             img {
+    //                 padding: 5px;
+    //                 width: 100px;
+    //             }
+    //         }
+    //     }
+    // }
 
     // About Section-2
     .container-2-about {
@@ -366,6 +401,7 @@ html {
     }
 }
 
+
 // *** Password Reset Page
 .password-container {
     @extend %signin-page-container;
@@ -381,38 +417,7 @@ html {
             @extend %signin-block;
     
             .password-block-content {
-                line-height: 45px;
-                padding: 25px 70px 50px 70px;
-                width: 100%;
-    
-                h2 {
-                    font-weight: 500;
-                }
-    
-                p {
-                    font-size: 13px;
-                    line-height: 18px;
-                    margin: 12px 0;
-                }
-    
-                form {
-                    display: flex;
-                    flex-direction: column;
-    
-                    input {
-                        background-color: transparent;
-                        border-color: rgba(255, 255, 255, 0.745);
-                        border-radius: 5px;
-                        border-style: solid;
-                        border-width: 0.03px;
-                        margin: 5px 0 10px 0;
-                        padding: 12px;
-                    }
-    
-                    input::placeholder {
-                        color: rgba(255, 255, 255, 0.692);
-                    }
-                }
+                @extend %signin-block-content;
                 
                 .password-button {
                     @extend %signin-button;
@@ -501,7 +506,7 @@ html {
             align-items: center;
             display: flex;
             flex-direction: column;
-            margin-top: 25px;
+            margin-top: 20px;
         
             .no-account {
                 display: flex;
@@ -562,10 +567,52 @@ html {
                 }
             }
         
-            // .signup-image img {
-            //     padding-top: 10px;
-            //     width: 120px
-            // }
+            .signup-image img {
+                padding-top: 10px;
+                width: 100px
+            }
+        }
+
+        .signup-block-extra-content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        
+            .signup-have-account {
+                display: flex;
+                margin: 10px;
+        
+                a {
+                    color: rgb(0, 145, 255);
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+        
+                a:hover {
+                    text-decoration: underline;
+                }
+        
+                p {
+                    padding-right: 5px;
+                }
+            }
+        
+            .no-password {
+                display: flex;
+                margin-bottom: 50px;
+                margin-top: 5px;
+        
+                a {
+                    color: rgb(0, 145, 255);
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+        
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }

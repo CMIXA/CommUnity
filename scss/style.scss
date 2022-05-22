@@ -199,6 +199,7 @@ html {
             // height: 300px;
             opacity: 90%;
             padding: 100px 0;
+            margin: 0 12%;
         
             .sponsor-title {
                 text-align: center;
@@ -210,6 +211,7 @@ html {
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                // margin: 0 12%;
         
                 .sponsor-item {
                     align-items: center;
@@ -237,6 +239,12 @@ html {
         .about {
             padding: 100px 0;
 
+            h2 {
+                font-size: 32px;
+                font-weight: 300;
+                padding-bottom: 20px;
+            }
+
             p {
                 @extend %p-text;
             }
@@ -262,10 +270,12 @@ html {
                 a {
                     @extend %link-decoration;
                 }
-                
-                h2 {
-                    font-weight: 300;
-                    padding-bottom: 20px;
+            }
+
+            .about-goals {
+
+                li {
+                    padding: 15px 0;
                 }
             }
         }
@@ -299,7 +309,7 @@ html {
         @extend %container-attributes;
 
         .contact {
-            padding: 100px 0;
+            padding: 100px 0 20px 0;
 
             .contact-text-container {
                 display: flex;
@@ -411,7 +421,7 @@ html {
 
                 img {
                     margin: 20px ;
-                    width: 50px
+                    width: 40px
                 }
                 
             }

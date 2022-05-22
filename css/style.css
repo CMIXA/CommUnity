@@ -167,6 +167,7 @@ html {
 .landing-page .container-1-community .sponsors-container {
   opacity: 90%;
   padding: 100px 0;
+  margin: 0 12%;
 }
 .landing-page .container-1-community .sponsors-container .sponsor-title {
   text-align: center;
@@ -194,6 +195,11 @@ html {
 .landing-page .container-2-about .about {
   padding: 100px 0;
 }
+.landing-page .container-2-about .about h2 {
+  font-size: 32px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
 .landing-page .container-2-about .about .about-title {
   align-items: center;
   display: flex;
@@ -206,9 +212,8 @@ html {
 .landing-page .container-2-about .about .about-how {
   margin: 100px 0;
 }
-.landing-page .container-2-about .about .about-how h2 {
-  font-weight: 300;
-  padding-bottom: 20px;
+.landing-page .container-2-about .about .about-goals li {
+  padding: 15px 0;
 }
 .landing-page .container-3-location .location {
   padding: 100px 0;
@@ -222,7 +227,7 @@ html {
   width: 60px;
 }
 .landing-page .container-4-contact .contact {
-  padding: 100px 0;
+  padding: 100px 0 20px 0;
 }
 .landing-page .container-4-contact .contact .contact-text-container {
   display: flex;
@@ -303,7 +308,7 @@ html {
 }
 .landing-page .container-x-footer .footer .footer-socialmedia img {
   margin: 20px;
-  width: 50px;
+  width: 40px;
 }
 .landing-page .container-x-footer .footer .footer-text {
   text-align: center;

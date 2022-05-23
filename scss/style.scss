@@ -1,7 +1,7 @@
 %container-attributes {
     // height: 1000px;
     height: auto;
-    margin: 0 12%;
+    // margin: 0 12%;
 }
 
 %link-decoration {
@@ -119,6 +119,10 @@ html {
     scroll-behavior: smooth;
 }
 
+// .container-margin {
+//     margin: 0 12%;
+// }
+
 // *** Main Page (Langing Page)
 .landing-page {
     background-color: rgb(23, 23, 23);
@@ -127,105 +131,117 @@ html {
     // Home Section-1
     .container-1-community {
         @extend %container-attributes;
-    
-        nav {
-            align-items: center;
-            display: flex;
-            padding: 60px 0;
-            width: 100%;
-    
-            .nav-links {
-                margin-left: auto;
-            }
-    
-            .nav-title {
-                font-weight: 700;
-            }
-    
-            a {
-                padding: 0 15px;
-                text-decoration: none;
-            }
-    
-            a:hover {
-                // color:rgb(0, 145, 255);
-                opacity: 60%;
-            }
-    
-            img {
-                width: 27px;
-                margin-right: 6px;
-            }
-        }
-    
-        .community {
-            margin: 150px 0 80px 0;
-            display: flex;
-            flex-wrap: wrap-reverse;
-            justify-content: space-between;
-            width: 100%;
-    
-            .community-icon {
-    
-                img {
-                    padding-bottom: 30px;
-                    opacity: 50%;
-                }
-            }
-    
-            .community-text {
-                width: 500px;
-    
-                .community-button {
-                    background-color: transparent;
-                    border-color: white;
-                    border-radius: 10px;
-                    border-width: 2px;
-                    font-size: 1rem;
-                    font-weight: 500;
-                    margin: 20px 0;
-                    padding: 8px 0;
-                    width: 275px;
-                }
-    
-                .community-text-title {
-                    padding-bottom: 20px;
-                }
-            }
-        }
+        background-color: rgb(23, 24, 26);
+        background-image: url(/images/people.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 
-        // Sponsors - Under Section-1
-        .sponsors-container {
-            // height: 300px;
-            opacity: 90%;
-            padding: 100px 0;
+        .container-margin {
             margin: 0 12%;
+    
+            nav {
+                align-items: center;
+                display: flex;
+                padding: 60px 0;
+                width: 100%;
         
-            .sponsor-title {
-                text-align: center;
-                padding: 20px 0;
-                font-size: 25px;
+                .nav-links {
+                    margin-left: auto;
+                }
+        
+                .nav-title {
+                    font-weight: 700;
+                }
+        
+                a {
+                    padding: 0 15px;
+                    text-decoration: none;
+                }
+        
+                a:hover {
+                    // color:rgb(0, 145, 255);
+                    opacity: 60%;
+                }
+        
+                img {
+                    width: 27px;
+                    margin-right: 6px;
+                }
             }
         
-            .sponsors {
+            .community {
+                margin: 150px 0 80px 0;
                 display: flex;
-                align-items: center;
-                justify-content: center;
-                // margin: 0 12%;
+                flex-wrap: wrap-reverse;
+                justify-content: space-between;
+                width: 100%;
         
-                .sponsor-item {
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-                    padding: 0 15%;
-        
-                    h3 {
-                        font-size: 25px;
-                    }
+                .community-icon {
         
                     img {
-                        padding: 5px;
-                        width: 100px;
+                        padding-bottom: 30px;
+                        opacity: 50%;
+                    }
+                }
+        
+                .community-text {
+                    width: 500px;
+        
+                    .community-button {
+                        background-color: transparent;
+                        border-color: white;
+                        border-radius: 10px;
+                        border-width: 2px;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        margin: 20px 0;
+                        padding: 8px 0;
+                        width: 275px;
+                    }
+        
+                    .community-text-title {
+                        padding-bottom: 20px;
+                    }
+                }
+            }
+
+            // Sponsors - Under Section-1
+            .sponsors-container {
+                // height: 300px;
+                opacity: 90%;
+                padding: 100px 0 140px 0;
+                // margin: 0 12%;
+            
+                .sponsor-title {
+                    text-align: center;
+                    padding: 20px 0;
+                    font-size: 25px;
+                }
+            
+                .sponsors {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    // margin: 0 12%;
+            
+                    .sponsor-item {
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 30px 50px 30px 50px;
+                        margin: 0 1%;
+            
+                        h3 {
+                            font-size: 25px;
+                        }
+            
+                        img {
+                            padding: 5px;
+                            width: 100px;
+                        }
                     }
                 }
             }
@@ -236,46 +252,50 @@ html {
     .container-2-about {
         @extend %container-attributes;
 
-        .about {
-            padding: 100px 0;
+        .container-margin {
+            margin: 0 12%;
 
-            h2 {
-                font-size: 32px;
-                font-weight: 300;
-                padding-bottom: 20px;
-            }
+            .about {
+                padding: 100px 0;
 
-            p {
-                @extend %p-text;
-            }
-
-            .about-title {
-                align-items: center;
-                display: flex;
-                padding-bottom: 30px;
-            
-                h1 {
-                    @extend %section-title;
+                h2 {
+                    font-size: 32px;
+                    font-weight: 300;
+                    padding-bottom: 20px;
                 }
-            
-                img {
-                    margin-right: 10px;
-                    width: 50px;
+
+                p {
+                    @extend %p-text;
                 }
-            }
 
-            .about-how {
-                margin: 100px 0;
-
-                a {
-                    @extend %link-decoration;
+                .about-title {
+                    align-items: center;
+                    display: flex;
+                    padding-bottom: 30px;
+                
+                    h1 {
+                        @extend %section-title;
+                    }
+                
+                    img {
+                        margin-right: 10px;
+                        width: 50px;
+                    }
                 }
-            }
 
-            .about-goals {
+                .about-how {
+                    margin: 100px 0;
 
-                li {
-                    padding: 15px 0;
+                    a {
+                        @extend %link-decoration;
+                    }
+                }
+
+                .about-goals {
+
+                    li {
+                        padding: 15px 0;
+                    }
                 }
             }
         }
@@ -285,20 +305,24 @@ html {
     .container-3-location {
         @extend %container-attributes;
 
-        .location {
-            padding: 100px 0;
-        
-            .location-title {
-                align-items: center;
-                display: flex;
+        .container-margin {
+            margin: 0 12%;
 
-                h1 {
-                    @extend %section-title;
-                }
+            .location {
+                padding: 100px 0;
+            
+                .location-title {
+                    align-items: center;
+                    display: flex;
 
-                img{
-                    margin-right: 7px;
-                    width: 60px;
+                    h1 {
+                        @extend %section-title;
+                    }
+
+                    img{
+                        margin-right: 7px;
+                        width: 60px;
+                    }
                 }
             }
         }
@@ -308,97 +332,101 @@ html {
     .container-4-contact {
         @extend %container-attributes;
 
-        .contact {
-            padding: 100px 0 20px 0;
+        .container-margin {
+            margin: 0 12%;
 
-            .contact-text-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-                margin: 80px 0;
-                width: 100%;
-                height: auto;
+            .contact {
+                padding: 100px 0 20px 0;
 
-                .contact-form {
-                    min-width: 400px;
+                .contact-text-container {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 80px 0;
+                    width: 100%;
+                    height: auto;
 
-                    .contact-form-elements {
-                        display: flex;
-                        flex-direction: column;
+                    .contact-form {
+                        min-width: 400px;
 
-                        .contact-form-message {
-
-                            textarea {
-                                border-radius: 5px;
-                                color: black;
-                                margin-top: 5px;
-                                padding: 8px;
-                                width: 400px;
-                            }
-                        }
-
-                        .contact-form-input {
-                            margin: 0 0 10px 0;
-
-                            input {
-                                border-radius: 5px;
-                                border-style: solid;
-                                color: black;
-                                padding: 8px;
-                                margin: 5px 0;
-                                width: 400px;
-                            }
-                        }
-
-                        .contact-button {
-                            background-color: transparent;
-                            border-color: aliceblue;
-                            border-radius: 5px;
-                            border-width: 1px;
-                            margin: 20px 0;
-                            height: 35px;
-                            width: 120px;
-                        }
-                    }
-                }
-
-                .contact-sidetext {
-                    min-width: 300px;
-                    padding-bottom: 30px;
-                    padding-right: 20px;
-
-                    .contact-methods {
-                        margin-top: 40px;
-
-                        div {
-                            align-items: center;
+                        .contact-form-elements {
                             display: flex;
-                            padding: 15px 0;
-                        }
+                            flex-direction: column;
 
-                        h3 {
-                            margin-bottom: 20px;
-                        }
+                            .contact-form-message {
 
-                        img {
-                            padding-right: 5px;
-                            width: 27px;
+                                textarea {
+                                    border-radius: 5px;
+                                    color: black;
+                                    margin-top: 5px;
+                                    padding: 8px;
+                                    width: 400px;
+                                }
+                            }
+
+                            .contact-form-input {
+                                margin: 0 0 10px 0;
+
+                                input {
+                                    border-radius: 5px;
+                                    border-style: solid;
+                                    color: black;
+                                    padding: 8px;
+                                    margin: 5px 0;
+                                    width: 400px;
+                                }
+                            }
+
+                            .contact-button {
+                                background-color: transparent;
+                                border-color: aliceblue;
+                                border-radius: 5px;
+                                border-width: 1px;
+                                margin: 20px 0;
+                                height: 35px;
+                                width: 120px;
+                            }
+                        }
+                    }
+
+                    .contact-sidetext {
+                        min-width: 300px;
+                        padding-bottom: 30px;
+                        padding-right: 20px;
+
+                        .contact-methods {
+                            margin-top: 40px;
+
+                            div {
+                                align-items: center;
+                                display: flex;
+                                padding: 15px 0;
+                            }
+
+                            h3 {
+                                margin-bottom: 20px;
+                            }
+
+                            img {
+                                padding-right: 5px;
+                                width: 27px;
+                            }
                         }
                     }
                 }
-            }
 
-            .contact-title {
-                align-items: center;
-                display: flex;
-    
-                h1 {
-                    @extend %section-title;
-                }
-    
-                img {
-                    margin-right: 14px;
-                    width: 50px;
+                .contact-title {
+                    align-items: center;
+                    display: flex;
+        
+                    h1 {
+                        @extend %section-title;
+                    }
+        
+                    img {
+                        margin-right: 14px;
+                        width: 50px;
+                    }
                 }
             }
         }

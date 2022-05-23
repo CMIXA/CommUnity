@@ -1,18 +1,17 @@
 .landing-page .container-x-footer, .landing-page .container-4-contact, .landing-page .container-3-location, .landing-page .container-2-about, .landing-page .container-1-community {
   height: auto;
-  margin: 0 12%;
 }
 
-.landing-page .container-2-about .about .about-how a {
+.landing-page .container-2-about .container-margin .about .about-how a {
   color: rgb(113, 136, 225);
   text-decoration: none;
 }
 
-.landing-page .container-x-footer, .landing-page .container-2-about .about p {
+.landing-page .container-x-footer, .landing-page .container-2-about .container-margin .about p {
   line-height: 30px;
 }
 
-.landing-page .container-4-contact .contact .contact-title h1, .landing-page .container-3-location .location .location-title h1, .landing-page .container-2-about .about .about-title h1 {
+.landing-page .container-4-contact .container-margin .contact .contact-title h1, .landing-page .container-3-location .container-margin .location .location-title h1, .landing-page .container-2-about .container-margin .about .about-title h1 {
   font-size: 37px;
   font-weight: 500;
 }
@@ -113,44 +112,55 @@ html {
   background-color: rgb(23, 23, 23);
   height: auto;
 }
-.landing-page .container-1-community nav {
+.landing-page .container-1-community {
+  background-color: rgb(23, 24, 26);
+  background-image: url(/images/people.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.landing-page .container-1-community .container-margin {
+  margin: 0 12%;
+}
+.landing-page .container-1-community .container-margin nav {
   align-items: center;
   display: flex;
   padding: 60px 0;
   width: 100%;
 }
-.landing-page .container-1-community nav .nav-links {
+.landing-page .container-1-community .container-margin nav .nav-links {
   margin-left: auto;
 }
-.landing-page .container-1-community nav .nav-title {
+.landing-page .container-1-community .container-margin nav .nav-title {
   font-weight: 700;
 }
-.landing-page .container-1-community nav a {
+.landing-page .container-1-community .container-margin nav a {
   padding: 0 15px;
   text-decoration: none;
 }
-.landing-page .container-1-community nav a:hover {
+.landing-page .container-1-community .container-margin nav a:hover {
   opacity: 60%;
 }
-.landing-page .container-1-community nav img {
+.landing-page .container-1-community .container-margin nav img {
   width: 27px;
   margin-right: 6px;
 }
-.landing-page .container-1-community .community {
+.landing-page .container-1-community .container-margin .community {
   margin: 150px 0 80px 0;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   width: 100%;
 }
-.landing-page .container-1-community .community .community-icon img {
+.landing-page .container-1-community .container-margin .community .community-icon img {
   padding-bottom: 30px;
   opacity: 50%;
 }
-.landing-page .container-1-community .community .community-text {
+.landing-page .container-1-community .container-margin .community .community-text {
   width: 500px;
 }
-.landing-page .container-1-community .community .community-text .community-button {
+.landing-page .container-1-community .container-margin .community .community-text .community-button {
   background-color: transparent;
   border-color: white;
   border-radius: 10px;
@@ -161,75 +171,85 @@ html {
   padding: 8px 0;
   width: 275px;
 }
-.landing-page .container-1-community .community .community-text .community-text-title {
+.landing-page .container-1-community .container-margin .community .community-text .community-text-title {
   padding-bottom: 20px;
 }
-.landing-page .container-1-community .sponsors-container {
+.landing-page .container-1-community .container-margin .sponsors-container {
   opacity: 90%;
-  padding: 100px 0;
-  margin: 0 12%;
+  padding: 100px 0 140px 0;
 }
-.landing-page .container-1-community .sponsors-container .sponsor-title {
+.landing-page .container-1-community .container-margin .sponsors-container .sponsor-title {
   text-align: center;
   padding: 20px 0;
   font-size: 25px;
 }
-.landing-page .container-1-community .sponsors-container .sponsors {
+.landing-page .container-1-community .container-margin .sponsors-container .sponsors {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.landing-page .container-1-community .sponsors-container .sponsors .sponsor-item {
+.landing-page .container-1-community .container-margin .sponsors-container .sponsors .sponsor-item {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 0 15%;
+  padding: 30px 50px 30px 50px;
+  margin: 0 1%;
 }
-.landing-page .container-1-community .sponsors-container .sponsors .sponsor-item h3 {
+.landing-page .container-1-community .container-margin .sponsors-container .sponsors .sponsor-item h3 {
   font-size: 25px;
 }
-.landing-page .container-1-community .sponsors-container .sponsors .sponsor-item img {
+.landing-page .container-1-community .container-margin .sponsors-container .sponsors .sponsor-item img {
   padding: 5px;
   width: 100px;
 }
-.landing-page .container-2-about .about {
+.landing-page .container-2-about .container-margin {
+  margin: 0 12%;
+}
+.landing-page .container-2-about .container-margin .about {
   padding: 100px 0;
 }
-.landing-page .container-2-about .about h2 {
+.landing-page .container-2-about .container-margin .about h2 {
   font-size: 32px;
   font-weight: 300;
   padding-bottom: 20px;
 }
-.landing-page .container-2-about .about .about-title {
+.landing-page .container-2-about .container-margin .about .about-title {
   align-items: center;
   display: flex;
   padding-bottom: 30px;
 }
-.landing-page .container-2-about .about .about-title img {
+.landing-page .container-2-about .container-margin .about .about-title img {
   margin-right: 10px;
   width: 50px;
 }
-.landing-page .container-2-about .about .about-how {
+.landing-page .container-2-about .container-margin .about .about-how {
   margin: 100px 0;
 }
-.landing-page .container-2-about .about .about-goals li {
+.landing-page .container-2-about .container-margin .about .about-goals li {
   padding: 15px 0;
 }
-.landing-page .container-3-location .location {
+.landing-page .container-3-location .container-margin {
+  margin: 0 12%;
+}
+.landing-page .container-3-location .container-margin .location {
   padding: 100px 0;
 }
-.landing-page .container-3-location .location .location-title {
+.landing-page .container-3-location .container-margin .location .location-title {
   align-items: center;
   display: flex;
 }
-.landing-page .container-3-location .location .location-title img {
+.landing-page .container-3-location .container-margin .location .location-title img {
   margin-right: 7px;
   width: 60px;
 }
-.landing-page .container-4-contact .contact {
+.landing-page .container-4-contact .container-margin {
+  margin: 0 12%;
+}
+.landing-page .container-4-contact .container-margin .contact {
   padding: 100px 0 20px 0;
 }
-.landing-page .container-4-contact .contact .contact-text-container {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -237,24 +257,24 @@ html {
   width: 100%;
   height: auto;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-form {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form {
   min-width: 400px;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements {
   display: flex;
   flex-direction: column;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements .contact-form-message textarea {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-form-message textarea {
   border-radius: 5px;
   color: black;
   margin-top: 5px;
   padding: 8px;
   width: 400px;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements .contact-form-input {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-form-input {
   margin: 0 0 10px 0;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements .contact-form-input input {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-form-input input {
   border-radius: 5px;
   border-style: solid;
   color: black;
@@ -262,7 +282,7 @@ html {
   margin: 5px 0;
   width: 400px;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-form .contact-form-elements .contact-button {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-button {
   background-color: transparent;
   border-color: aliceblue;
   border-radius: 5px;
@@ -271,31 +291,31 @@ html {
   height: 35px;
   width: 120px;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-sidetext {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext {
   min-width: 300px;
   padding-bottom: 30px;
   padding-right: 20px;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-sidetext .contact-methods {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext .contact-methods {
   margin-top: 40px;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-sidetext .contact-methods div {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext .contact-methods div {
   align-items: center;
   display: flex;
   padding: 15px 0;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-sidetext .contact-methods h3 {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext .contact-methods h3 {
   margin-bottom: 20px;
 }
-.landing-page .container-4-contact .contact .contact-text-container .contact-sidetext .contact-methods img {
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext .contact-methods img {
   padding-right: 5px;
   width: 27px;
 }
-.landing-page .container-4-contact .contact .contact-title {
+.landing-page .container-4-contact .container-margin .contact .contact-title {
   align-items: center;
   display: flex;
 }
-.landing-page .container-4-contact .contact .contact-title img {
+.landing-page .container-4-contact .container-margin .contact .contact-title img {
   margin-right: 14px;
   width: 50px;
 }

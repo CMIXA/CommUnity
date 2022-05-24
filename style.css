@@ -1,0 +1,503 @@
+.landing-page .container-x-footer, .landing-page .container-4-contact, .landing-page .container-3-location, .landing-page .container-2-about, .landing-page .container-1-community {
+  height: auto;
+}
+
+.landing-page .container-2-about .container-margin .about .about-how a {
+  color: rgb(113, 136, 225);
+  text-decoration: none;
+}
+
+.landing-page .container-x-footer, .landing-page .container-2-about .container-margin .about p {
+  line-height: 30px;
+}
+
+.landing-page .container-4-contact .container-margin .contact .contact-title h1, .landing-page .container-3-location .container-margin .location .location-title h1, .landing-page .container-2-about .container-margin .about .about-title h1 {
+  font-size: 37px;
+  font-weight: 500;
+}
+
+.signup-container .signup-block-container .signup-block, .password-container .password-block-container .password-block {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+}
+
+.signup-container .signup-block-container .signup-block .signup-block-content, .password-container .password-block-container .password-block .password-block-content {
+  line-height: 45px;
+  padding: 15px 70px 20px 70px;
+  width: 460px;
+}
+.signup-container .signup-block-container .signup-block .signup-block-content h2, .password-container .password-block-container .password-block .password-block-content h2 {
+  font-weight: 500;
+}
+.signup-container .signup-block-container .signup-block .signup-block-content p, .password-container .password-block-container .password-block .password-block-content p {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 12px 0;
+}
+.signup-container .signup-block-container .signup-block .signup-block-content form, .password-container .password-block-container .password-block .password-block-content form {
+  display: flex;
+  flex-direction: column;
+}
+.signup-container .signup-block-container .signup-block .signup-block-content form input, .password-container .password-block-container .password-block .password-block-content form input {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.745);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0.03px;
+  margin: 5px 0 10px 0;
+  padding: 12px;
+}
+.signup-container .signup-block-container .signup-block .signup-block-content form input::placeholder, .password-container .password-block-container .password-block .password-block-content form input::placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+.signup-container .signup-block-container .signup-block .signup-block-content .signup-button, .signin-container .signin-block-container .signin-block .signin-block-content .signin-button, .password-container .password-block-container .password-block .password-block-content .password-button {
+  background-color: rgb(48, 77, 194);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+  padding: 11px;
+  width: 100%;
+}
+
+.signup-container .signup-brandtitle, .signin-container .signin-brandtitle, .password-container .password-brandtitle {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 10%;
+  padding: 40px 0 40px 0;
+}
+.signup-container .signup-brandtitle h1, .signin-container .signin-brandtitle h1, .password-container .password-brandtitle h1 {
+  font-weight: 600;
+  margin-right: 20px;
+}
+.signup-container .signup-brandtitle img, .signin-container .signin-brandtitle img, .password-container .password-brandtitle img {
+  margin-right: 6px;
+  width: 30px;
+}
+
+.signup-container, .signin-container, .password-container {
+  align-items: center;
+  background-color: rgb(23, 24, 26);
+  background-image: url(/images/people.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing-page {
+  background-color: rgb(23, 23, 23);
+  height: auto;
+}
+.landing-page .container-1-community {
+  background-color: rgb(23, 24, 26);
+  background-image: url(/images/people.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+.landing-page .container-1-community .container-margin {
+  margin: 0 12%;
+}
+.landing-page .container-1-community .container-margin nav {
+  align-items: center;
+  display: flex;
+  padding: 60px 0;
+  width: 100%;
+}
+.landing-page .container-1-community .container-margin nav .nav-links {
+  margin-left: auto;
+}
+.landing-page .container-1-community .container-margin nav .nav-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.landing-page .container-1-community .container-margin nav a {
+  padding: 0 15px;
+  text-decoration: none;
+}
+.landing-page .container-1-community .container-margin nav a:hover {
+  opacity: 60%;
+}
+.landing-page .container-1-community .container-margin nav img {
+  width: 30px;
+  margin-right: 6px;
+}
+.landing-page .container-1-community .container-margin .community {
+  margin: 150px 0 80px 0;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+.landing-page .container-1-community .container-margin .community .community-icon img {
+  padding-bottom: 30px;
+  opacity: 50%;
+}
+.landing-page .container-1-community .container-margin .community .community-text {
+  width: 500px;
+}
+.landing-page .container-1-community .container-margin .community .community-text .community-button {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+  border-width: 2px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 20px 0;
+  padding: 8px 0;
+  width: 275px;
+}
+.landing-page .container-1-community .container-margin .community .community-text .community-text-title {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.landing-page .container-1-community .container-margin .sponsors-container {
+  opacity: 40%;
+  padding: 100px 0 140px 0;
+}
+.landing-page .container-1-community .container-margin .sponsors-container .sponsor-title {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+.landing-page .container-1-community .container-margin .sponsors-container .sponsors {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.landing-page .container-1-community .container-margin .sponsors-container .sponsors .sponsor-item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 50px 30px 50px;
+  margin: 0 1%;
+}
+.landing-page .container-1-community .container-margin .sponsors-container .sponsors .sponsor-item h3 {
+  font-size: 25px;
+}
+.landing-page .container-1-community .container-margin .sponsors-container .sponsors .sponsor-item img {
+  padding: 5px;
+  width: 100px;
+}
+.landing-page .container-2-about .container-margin {
+  margin: 0 12%;
+}
+.landing-page .container-2-about .container-margin .about {
+  padding: 180px 0 100px 0;
+}
+.landing-page .container-2-about .container-margin .about h2 {
+  font-size: 32px;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+.landing-page .container-2-about .container-margin .about .about-title {
+  align-items: center;
+  display: flex;
+  padding-bottom: 30px;
+}
+.landing-page .container-2-about .container-margin .about .about-title img {
+  margin-right: 10px;
+  width: 50px;
+}
+.landing-page .container-2-about .container-margin .about .about-how {
+  margin: 100px 0;
+}
+.landing-page .container-2-about .container-margin .about .about-goals ul {
+  padding-left: 20px;
+}
+.landing-page .container-2-about .container-margin .about .about-goals ul li {
+  padding: 15px 0;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits {
+  margin: 100px 0;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text h3 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text img {
+  padding-bottom: 20px;
+  width: 100px;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text p {
+  max-width: 500px;
+  min-width: 300px;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text .benefit-left {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  flex-wrap: wrap;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text .benefit-right {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+  flex-wrap: wrap-reverse;
+}
+.landing-page .container-3-location .container-margin {
+  margin: 0 12%;
+}
+.landing-page .container-3-location .container-margin .location {
+  padding: 100px 0;
+}
+.landing-page .container-3-location .container-margin .location .location-title {
+  align-items: center;
+  display: flex;
+}
+.landing-page .container-3-location .container-margin .location .location-title img {
+  margin-right: 7px;
+  width: 60px;
+}
+.landing-page .container-4-contact .container-margin {
+  margin: 0 12%;
+}
+.landing-page .container-4-contact .container-margin .contact {
+  padding: 100px 0 20px 0;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 80px 0;
+  width: 100%;
+  height: auto;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form {
+  min-width: 400px;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements {
+  display: flex;
+  flex-direction: column;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-form-message textarea {
+  border-radius: 5px;
+  color: black;
+  margin-top: 5px;
+  padding: 8px;
+  width: 400px;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-form-input {
+  margin: 0 0 10px 0;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-form-input input {
+  border-radius: 5px;
+  border-style: solid;
+  color: black;
+  padding: 8px;
+  margin: 5px 0;
+  width: 400px;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-button {
+  background-color: transparent;
+  border-color: aliceblue;
+  border-radius: 5px;
+  border-width: 1px;
+  margin: 20px 0;
+  height: 35px;
+  width: 120px;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext {
+  min-width: 300px;
+  padding-bottom: 30px;
+  padding-right: 20px;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext .contact-methods {
+  margin-top: 40px;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext .contact-methods div {
+  align-items: center;
+  display: flex;
+  padding: 15px 0;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext .contact-methods h3 {
+  margin-bottom: 20px;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext .contact-methods img {
+  padding-right: 5px;
+  width: 27px;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-title {
+  align-items: center;
+  display: flex;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-title img {
+  margin-right: 14px;
+  width: 60px;
+}
+.landing-page .container-x-footer .footer {
+  padding: 80px 0;
+}
+.landing-page .container-x-footer .footer .footer-socialmedia {
+  display: flex;
+  justify-content: center;
+}
+.landing-page .container-x-footer .footer .footer-socialmedia img {
+  margin: 20px;
+  width: 40px;
+}
+.landing-page .container-x-footer .footer .footer-text {
+  text-align: center;
+}
+
+.password-container .password-block-container {
+  height: 70%;
+}
+.password-container .password-block-container .password-block .password-image img {
+  padding-top: 10px;
+  width: 100px;
+}
+
+.signin-container .signin-block-container {
+  height: 70%;
+}
+.signin-container .signin-block-container .signin-block {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  width: 450px;
+  height: 400px;
+}
+.signin-container .signin-block-container .signin-block .signin-block-content {
+  line-height: 45px;
+  margin: 0 70px;
+  width: 100%;
+}
+.signin-container .signin-block-container .signin-block .signin-block-content h2 {
+  font-weight: 500;
+}
+.signin-container .signin-block-container .signin-block .signin-block-content p {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 12px 0;
+}
+.signin-container .signin-block-container .signin-block .signin-block-content form {
+  display: flex;
+  flex-direction: column;
+}
+.signin-container .signin-block-container .signin-block .signin-block-content form input {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.745);
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 0.03px;
+  margin: 5px 0;
+  padding: 12px;
+}
+.signin-container .signin-block-container .signin-block .signin-block-content form input::placeholder {
+  color: rgba(255, 255, 255, 0.692);
+}
+.signin-container .signin-block-container .signin-block .signin-block-content form .signin-remember {
+  align-items: center;
+  display: flex;
+}
+.signin-container .signin-block-container .signin-block .signin-block-content form .signin-remember .remember-me {
+  padding-left: 5px;
+}
+.signin-container .signin-block-container .signin-block-extra-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-account {
+  display: flex;
+  margin: 10px;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-account a {
+  color: rgb(0, 145, 255);
+  font-weight: 500;
+  text-decoration: none;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-account a:hover {
+  text-decoration: underline;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-account p {
+  padding-right: 5px;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-password {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-password a {
+  color: rgb(0, 145, 255);
+  font-weight: 500;
+  text-decoration: none;
+}
+.signin-container .signin-block-container .signin-block-extra-content .no-password a:hover {
+  text-decoration: underline;
+}
+
+.signup-container .signup-block-container {
+  height: 70%;
+}
+.signup-container .signup-block-container .signup-block .signup-image img {
+  padding-top: 10px;
+  width: 100px;
+}
+.signup-container .signup-block-container .signup-block-extra-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.signup-container .signup-block-container .signup-block-extra-content .signup-have-account {
+  display: flex;
+  margin: 10px;
+}
+.signup-container .signup-block-container .signup-block-extra-content .signup-have-account a {
+  color: rgb(0, 145, 255);
+  font-weight: 500;
+  text-decoration: none;
+}
+.signup-container .signup-block-container .signup-block-extra-content .signup-have-account a:hover {
+  text-decoration: underline;
+}
+.signup-container .signup-block-container .signup-block-extra-content .signup-have-account p {
+  padding-right: 5px;
+}
+.signup-container .signup-block-container .signup-block-extra-content .no-password {
+  display: flex;
+  margin-bottom: 50px;
+  margin-top: 5px;
+}
+.signup-container .signup-block-container .signup-block-extra-content .no-password a {
+  color: rgb(0, 145, 255);
+  font-weight: 500;
+  text-decoration: none;
+}
+.signup-container .signup-block-container .signup-block-extra-content .no-password a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

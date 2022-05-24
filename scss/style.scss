@@ -308,20 +308,38 @@ html {
 
                     .about-benefits-text {
 
+                        h3 {
+                            font-size: 25px;
+                            font-weight: 600;
+                            padding-bottom: 10px;
+                        }
+
                         img {
+                            padding-bottom: 20px;
                             width: 100px;
+                        }
+
+                        p {
+                            max-width: 500px;
+                            min-width: 300px;
                         }
 
                         .benefit-left {
                             display: flex;
                             justify-content: space-between;
+                            padding: 60px 0;
                             flex-wrap: wrap;
                         }
                         
                         .benefit-right {
                             display: flex;
                             justify-content: space-between;
+                            padding: 60px 0;
                             flex-wrap: wrap-reverse
+
+                            // p {
+                            //     width: 200px
+                            // }
                         }
 
                     }

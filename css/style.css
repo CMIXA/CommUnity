@@ -133,7 +133,8 @@ html {
   margin-left: auto;
 }
 .landing-page .container-1-community .container-margin nav .nav-title {
-  font-weight: 700;
+  font-size: 22px;
+  font-weight: 600;
 }
 .landing-page .container-1-community .container-margin nav a {
   padding: 0 15px;
@@ -143,7 +144,7 @@ html {
   opacity: 60%;
 }
 .landing-page .container-1-community .container-margin nav img {
-  width: 27px;
+  width: 30px;
   margin-right: 6px;
 }
 .landing-page .container-1-community .container-margin .community {
@@ -172,10 +173,11 @@ html {
   width: 275px;
 }
 .landing-page .container-1-community .container-margin .community .community-text .community-text-title {
+  font-size: 24px;
   padding-bottom: 20px;
 }
 .landing-page .container-1-community .container-margin .sponsors-container {
-  opacity: 90%;
+  opacity: 40%;
   padding: 100px 0 140px 0;
 }
 .landing-page .container-1-community .container-margin .sponsors-container .sponsor-title {
@@ -207,7 +209,7 @@ html {
   margin: 0 12%;
 }
 .landing-page .container-2-about .container-margin .about {
-  padding: 100px 0;
+  padding: 180px 0 100px 0;
 }
 .landing-page .container-2-about .container-margin .about h2 {
   font-size: 32px;
@@ -226,8 +228,27 @@ html {
 .landing-page .container-2-about .container-margin .about .about-how {
   margin: 100px 0;
 }
-.landing-page .container-2-about .container-margin .about .about-goals li {
+.landing-page .container-2-about .container-margin .about .about-goals ul {
+  padding-left: 20px;
+}
+.landing-page .container-2-about .container-margin .about .about-goals ul li {
   padding: 15px 0;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits {
+  margin: 100px 0;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text img {
+  width: 100px;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text .benefit-left {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text .benefit-right {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
 }
 .landing-page .container-3-location .container-margin {
   margin: 0 12%;
@@ -317,7 +338,7 @@ html {
 }
 .landing-page .container-4-contact .container-margin .contact .contact-title img {
   margin-right: 14px;
-  width: 50px;
+  width: 60px;
 }
 .landing-page .container-x-footer .footer {
   padding: 80px 0;

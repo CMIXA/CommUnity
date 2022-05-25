@@ -1,3 +1,9 @@
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text .benefit-right, .landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text .benefit-left {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0;
+}
+
 .landing-page .container-x-footer, .landing-page .container-4-contact, .landing-page .container-3-location, .landing-page .container-2-about, .landing-page .container-1-community {
   height: auto;
 }
@@ -69,8 +75,8 @@
 .signup-container .signup-brandtitle, .signin-container .signin-brandtitle, .password-container .password-brandtitle {
   align-items: center;
   display: flex;
-  justify-content: center;
   height: 10%;
+  justify-content: center;
   padding: 40px 0 40px 0;
 }
 .signup-container .signup-brandtitle h1, .signin-container .signin-brandtitle h1, .password-container .password-brandtitle h1 {
@@ -86,14 +92,14 @@
   align-items: center;
   background-color: rgb(23, 24, 26);
   background-image: url(/images/people.jpg);
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   height: 100vh;
+  justify-content: center;
 }
 
 * {
@@ -115,9 +121,9 @@ html {
 .landing-page .container-1-community {
   background-color: rgb(23, 24, 26);
   background-image: url(/images/people.jpg);
+  background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
 .landing-page .container-1-community .container-margin {
@@ -148,10 +154,10 @@ html {
   margin-right: 6px;
 }
 .landing-page .container-1-community .container-margin .community {
-  margin: 150px 0 80px 0;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
+  padding: 150px 0 80px 0;
   width: 100%;
 }
 .landing-page .container-1-community .container-margin .community .community-icon img {
@@ -177,8 +183,8 @@ html {
   padding-bottom: 20px;
 }
 .landing-page .container-1-community .container-margin .sponsors-container {
-  opacity: 40%;
-  padding: 100px 0 140px 0;
+  opacity: 60%;
+  padding: 100px 0 100px 0;
 }
 .landing-page .container-1-community .container-margin .sponsors-container .sponsor-title {
   text-align: center;
@@ -188,14 +194,13 @@ html {
 .landing-page .container-1-community .container-margin .sponsors-container .sponsors {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-evenly;
 }
 .landing-page .container-1-community .container-margin .sponsors-container .sponsors .sponsor-item {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 30px 50px 30px 50px;
+  padding: 30px 50px;
   margin: 0 1%;
 }
 .landing-page .container-1-community .container-margin .sponsors-container .sponsors .sponsor-item h3 {
@@ -209,11 +214,11 @@ html {
   margin: 0 12%;
 }
 .landing-page .container-2-about .container-margin .about {
-  padding: 180px 0 100px 0;
+  padding: 120px 0 100px 0;
 }
 .landing-page .container-2-about .container-margin .about h2 {
-  font-size: 32px;
-  font-weight: 300;
+  font-size: 36px;
+  font-weight: 400;
   padding-bottom: 20px;
 }
 .landing-page .container-2-about .container-margin .about .about-title {
@@ -235,7 +240,10 @@ html {
   padding: 15px 0;
 }
 .landing-page .container-2-about .container-margin .about .about-benefits {
-  margin: 100px 0;
+  margin: 100px 0 0 0;
+}
+.landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text hr {
+  color: rgb(255, 255, 255);
 }
 .landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text h3 {
   font-size: 25px;
@@ -244,22 +252,16 @@ html {
 }
 .landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text img {
   padding-bottom: 20px;
-  width: 100px;
+  width: 120px;
 }
 .landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text p {
   max-width: 500px;
   min-width: 300px;
 }
 .landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text .benefit-left {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 0;
   flex-wrap: wrap;
 }
 .landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text .benefit-right {
-  display: flex;
-  justify-content: space-between;
-  padding: 60px 0;
   flex-wrap: wrap-reverse;
 }
 .landing-page .container-3-location .container-margin {
@@ -280,18 +282,15 @@ html {
   margin: 0 12%;
 }
 .landing-page .container-4-contact .container-margin .contact {
-  padding: 100px 0 20px 0;
+  padding: 100px 0 0 0;
 }
 .landing-page .container-4-contact .container-margin .contact .contact-text-container {
   display: flex;
   flex-wrap: wrap;
+  height: auto;
   justify-content: space-between;
   margin: 80px 0;
   width: 100%;
-  height: auto;
-}
-.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form {
-  min-width: 400px;
 }
 .landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements {
   display: flex;
@@ -302,7 +301,8 @@ html {
   color: black;
   margin-top: 5px;
   padding: 8px;
-  width: 400px;
+  max-width: 450px;
+  min-width: 375px;
 }
 .landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-form-input {
   margin: 0 0 10px 0;
@@ -313,21 +313,25 @@ html {
   color: black;
   padding: 8px;
   margin: 5px 0;
-  width: 400px;
+  max-width: 450px;
+  min-width: 375px;
 }
 .landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-form .contact-form-elements .contact-button {
   background-color: transparent;
-  border-color: aliceblue;
+  border-color: rgb(255, 255, 255);
   border-radius: 5px;
   border-width: 1px;
-  margin: 20px 0;
   height: 35px;
+  margin: 20px 0;
   width: 120px;
 }
 .landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext {
   min-width: 300px;
   padding-bottom: 30px;
   padding-right: 20px;
+}
+.landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext h3 {
+  font-weight: 600;
 }
 .landing-page .container-4-contact .container-margin .contact .contact-text-container .contact-sidetext .contact-methods {
   margin-top: 40px;
@@ -353,7 +357,7 @@ html {
   width: 60px;
 }
 .landing-page .container-x-footer .footer {
-  padding: 80px 0;
+  padding: 40px 0 80px 0;
 }
 .landing-page .container-x-footer .footer .footer-socialmedia {
   display: flex;
@@ -383,9 +387,9 @@ html {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 20px;
   display: flex;
+  height: 400px;
   justify-content: center;
   width: 450px;
-  height: 400px;
 }
 .signin-container .signin-block-container .signin-block .signin-block-content {
   line-height: 45px;

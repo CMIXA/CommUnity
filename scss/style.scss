@@ -222,7 +222,6 @@ html {
                 }
             
                 .sponsors {
-                    // align-items: center;
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-evenly;
@@ -347,6 +346,10 @@ html {
     .container-3-location {
         @extend %container-attributes;
 
+        a {
+            @extend %link-decoration;
+        }
+
         .container-margin {
             margin: 0 12%;
 
@@ -367,20 +370,42 @@ html {
                     }
                 }
 
-                table {
-                    background-color: rgba(0, 0, 0, 0.6);
-                    border-radius: 10px;
-                    margin: 40px 0;
-                    padding: 10px 30px;
-                    width: 700px;
+                .location-subtitle {
+                    margin-top: 20px;
+                }
 
-                    td {
-                        color: rgb(255, 255, 255);
-                    }
+                .location-table {
+                    // padding: 10px;
 
-                    th {
-                        color: rgb(255, 255, 255);
+                    table {
+                        background-color: rgba(0, 0, 0, 0.8);
+                        border-radius: 10px;
+                        margin: 20px 0 40px 0;
+                        padding: 5px 5px 20px 5px;
                         text-align: left;
+
+                        td {
+                            background-color: rgba(48, 48, 48, 0.2);
+                            padding: 10px 20px;
+                            width: 200px;
+                        }
+
+                        th {
+                            padding: 10px 20px;
+                            width: 200px;
+                        }
+
+                        thead,
+                        tbody {
+                            display: block;
+                        }
+                        
+                        tbody {
+                            height: 200px;
+                            overflow-y: auto;
+                            // scrollbar-color: light;
+                            // overflow-x: hidden;
+                        }
                     }
                 }
             }

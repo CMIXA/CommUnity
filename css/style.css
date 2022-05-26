@@ -8,7 +8,7 @@
   height: auto;
 }
 
-.landing-page .container-2-about .container-margin .about .about-how a {
+.landing-page .container-3-location a, .landing-page .container-2-about .container-margin .about .about-how a {
   color: rgb(113, 136, 225);
   text-decoration: none;
 }
@@ -275,19 +275,32 @@ html {
   margin-right: 7px;
   width: 60px;
 }
-.landing-page .container-3-location .container-margin .location table {
-  background-color: rgba(0, 0, 0, 0.6);
+.landing-page .container-3-location .container-margin .location .location-subtitle {
+  margin-top: 20px;
+}
+.landing-page .container-3-location .container-margin .location .location-table table {
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  margin: 40px 0;
-  padding: 10px 30px;
-  width: 700px;
-}
-.landing-page .container-3-location .container-margin .location table td {
-  color: rgb(255, 255, 255);
-}
-.landing-page .container-3-location .container-margin .location table th {
-  color: rgb(255, 255, 255);
+  margin: 20px 0 40px 0;
+  padding: 5px 5px 20px 5px;
   text-align: left;
+}
+.landing-page .container-3-location .container-margin .location .location-table table td {
+  background-color: rgba(48, 48, 48, 0.2);
+  padding: 10px 20px;
+  width: 200px;
+}
+.landing-page .container-3-location .container-margin .location .location-table table th {
+  padding: 10px 20px;
+  width: 200px;
+}
+.landing-page .container-3-location .container-margin .location .location-table table thead,
+.landing-page .container-3-location .container-margin .location .location-table table tbody {
+  display: block;
+}
+.landing-page .container-3-location .container-margin .location .location-table table tbody {
+  height: 200px;
+  overflow-y: auto;
 }
 .landing-page .container-4-contact .container-margin {
   margin: 0 12%;

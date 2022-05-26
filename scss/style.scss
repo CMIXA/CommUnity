@@ -127,18 +127,18 @@ html {
 
 // *** Main Page (Langing Page)
 .landing-page {
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(15, 13, 25);
     height: auto;
+    // background-color: rgb(23, 24, 26);
+    background-image: url(/images/palmlong.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.85);
 
     // Home Section-1
     .container-1-community {
         @extend %container-attributes;
-        background-color: rgb(23, 24, 26);
-        background-image: url(/images/people.jpg);
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 
         .container-margin {
             margin: 0 12%;
@@ -260,7 +260,7 @@ html {
 
                 h2 {
                     font-size: 36px;
-                    font-weight: 400;
+                    font-weight: 600;
                     padding-bottom: 20px;
                 }
 
@@ -303,7 +303,7 @@ html {
                 }
 
                 .about-benefits {
-                    margin: 100px 0 0 0;
+                    margin-top: 100px;
 
                     .about-benefits-text {
 
@@ -364,6 +364,23 @@ html {
                     img{
                         margin-right: 7px;
                         width: 60px;
+                    }
+                }
+
+                table {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    border-radius: 10px;
+                    margin: 40px 0;
+                    padding: 10px 30px;
+                    width: 700px;
+
+                    td {
+                        color: rgb(255, 255, 255);
+                    }
+
+                    th {
+                        color: rgb(255, 255, 255);
+                        text-align: left;
                     }
                 }
             }

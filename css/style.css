@@ -129,13 +129,23 @@ html {
 .landing-page .container-1-community .container-margin nav {
   align-items: center;
   display: flex;
+  justify-content: space-between;
   padding: 60px 0;
   width: 100%;
 }
-.landing-page .container-1-community .container-margin nav .nav-links {
-  margin-left: auto;
+.landing-page .container-1-community .container-margin nav .menu {
+  display: none;
 }
-.landing-page .container-1-community .container-margin nav .nav-title {
+.landing-page .container-1-community .container-margin nav .menu .menuline {
+  width: 28px;
+  height: 3px;
+  background-color: aliceblue;
+  margin-bottom: 5px;
+}
+.landing-page .container-1-community .container-margin nav .navbar-title {
+  display: flex;
+}
+.landing-page .container-1-community .container-margin nav .navbar-title .nav-title {
   font-size: 22px;
   font-weight: 600;
 }
@@ -211,7 +221,7 @@ html {
   margin: 0 12%;
 }
 .landing-page .container-2-about .container-margin .about {
-  padding: 120px 0 100px 0;
+  padding: 120px 0 50px 0;
 }
 .landing-page .container-2-about .container-margin .about h2 {
   font-size: 36px;
@@ -261,6 +271,9 @@ html {
 .landing-page .container-2-about .container-margin .about .about-benefits .about-benefits-text .benefit-right {
   flex-wrap: wrap-reverse;
 }
+.landing-page .container-3-location p {
+  padding-bottom: 20px;
+}
 .landing-page .container-3-location .container-margin {
   margin: 0 12%;
 }
@@ -270,6 +283,7 @@ html {
 .landing-page .container-3-location .container-margin .location .location-title {
   align-items: center;
   display: flex;
+  padding-bottom: 30px;
 }
 .landing-page .container-3-location .container-margin .location .location-title img {
   margin-right: 7px;
@@ -281,12 +295,12 @@ html {
 .landing-page .container-3-location .container-margin .location .location-table table {
   background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
-  margin: 20px 0 40px 0;
-  padding: 5px 5px 20px 5px;
+  margin: 20px 0 20px 0;
+  padding: 5px 5px 10px 5px;
   text-align: left;
 }
 .landing-page .container-3-location .container-margin .location .location-table table td {
-  background-color: rgba(48, 48, 48, 0.2);
+  background-color: rgba(60, 60, 60, 0.2);
   padding: 10px 20px;
   width: 200px;
 }
@@ -306,7 +320,7 @@ html {
   margin: 0 12%;
 }
 .landing-page .container-4-contact .container-margin .contact {
-  padding: 100px 0 0 0;
+  padding: 150px 0 0 0;
 }
 .landing-page .container-4-contact .container-margin .contact .contact-text-container {
   display: flex;

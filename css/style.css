@@ -18,7 +18,7 @@
 }
 
 .landing-page .container-4-contact .container-margin .contact .contact-title h1, .landing-page .container-3-location .container-margin .location .location-title h1, .landing-page .container-2-about .container-margin .about .about-title h1 {
-  font-size: 37px;
+  font-size: 40px;
   font-weight: 500;
 }
 
@@ -91,7 +91,7 @@
 .signup-container, .signin-container, .password-container {
   align-items: center;
   background-color: rgb(23, 24, 26);
-  background-image: url(/images/people.jpg);
+  background-image: url(../images/people.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -117,7 +117,7 @@ html {
 .landing-page {
   background-color: rgb(15, 13, 25);
   height: auto;
-  background-image: url(/images/palmlong.jpeg);
+  background-image: url(../images/palmlong.jpeg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -215,17 +215,17 @@ html {
   padding: 120px 0 50px 0;
 }
 .landing-page .container-2-about .container-margin .about h2 {
-  font-size: 36px;
-  font-weight: 600;
+  font-size: 32px;
+  font-weight: 500;
   padding-bottom: 20px;
 }
 .landing-page .container-2-about .container-margin .about .about-title {
   align-items: center;
   display: flex;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
 }
 .landing-page .container-2-about .container-margin .about .about-title img {
-  margin-right: 10px;
+  margin-right: 17px;
   width: 50px;
 }
 .landing-page .container-2-about .container-margin .about .about-how {
@@ -311,7 +311,7 @@ html {
   margin: 0 12%;
 }
 .landing-page .container-4-contact .container-margin .contact {
-  padding: 150px 0 0 0;
+  padding: 100px 0;
 }
 .landing-page .container-4-contact .container-margin .contact .contact-text-container {
   display: flex;

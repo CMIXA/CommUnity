@@ -114,6 +114,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.signin-body {
+  height: 100vh;
+}
+
 .landing-page {
   background-color: rgb(15, 13, 25);
   height: auto;
@@ -533,9 +537,12 @@ html {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
   nav {
     flex-direction: column;
+  }
+  nav .nav-links {
+    margin-top: 45px;
   }
 }
 

@@ -133,15 +133,6 @@ html {
   padding: 60px 0;
   width: 100%;
 }
-.landing-page .container-1-community .container-margin nav .menu {
-  display: none;
-}
-.landing-page .container-1-community .container-margin nav .menu .menuline {
-  width: 28px;
-  height: 3px;
-  background-color: aliceblue;
-  margin-bottom: 5px;
-}
 .landing-page .container-1-community .container-margin nav .navbar-title {
   display: flex;
 }
@@ -150,7 +141,7 @@ html {
   font-weight: 600;
 }
 .landing-page .container-1-community .container-margin nav a {
-  padding: 0 15px;
+  padding: 0 13px;
   text-decoration: none;
 }
 .landing-page .container-1-community .container-margin nav a:hover {
@@ -540,6 +531,12 @@ html {
 }
 .signup-container .signup-block-container .signup-block-extra-content .no-password a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
